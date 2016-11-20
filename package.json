@@ -1,8 +1,8 @@
 {
   "name": "auto-format",
   "version": "1.0.0",
-  "description": "A javascript auto-formatting library for code snippets. ",
-  "main": "index.js",
+  "description": "A javascript auto-formatting library for code snippets.",
+  "main": "lib/lib.min.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jundl77/auto-format.git"
@@ -23,20 +23,23 @@
     "url": "https://github.com/jundl77/auto-format/issues"
   },
   "homepage": "https://github.com/jundl77/auto-format#readme",
-  "dependencies": {
-    "babel": "^6.5.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-core": "^6.18.2",
-    "babel-preset-es2015": "^6.18.0"
+    "babel-loader": "^6.2.8",
+    "babel-preset-es2015": "^6.18.0",
+    "npm-run-all": "^3.1.1",
+    "webpack": "^1.13.3"
   },
   "scripts": {
     "test": "",
-    "build": "babel src --out-dir lib",
-    "prepublish": "npm run build"
+    "build": "webpack --progress --config webpack.config.js",
+    "prepublish": "npm-run-all build test"
   },
   "babel": {
-    "presets": ["es2015"]
+    "presets": [
+      "es2015"
+    ]
   }
 }
