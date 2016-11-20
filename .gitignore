@@ -1,0 +1,13 @@
+# Project files and folders
+dev
+build
+node_modules
+
+# IDE files and folders
+.idea
+
+# Generated files
+bundle.min.js
+
+# Other
+*.log
