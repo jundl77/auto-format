@@ -1,6 +1,6 @@
 {
   "name": "auto-format",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A javascript auto-formatting library for code snippets.",
   "main": "lib/lib.min.js",
   "repository": {
