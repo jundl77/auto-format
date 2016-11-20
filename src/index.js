@@ -1,12 +1,12 @@
 import JavaFormatter from "./javaFormatter"
 
-module.exports = function() {
+module.exports = {
     /**
      *
      * @param spacing
      * @returns {JavaFormatter}
      */
-    this.createJavaFormatter = function(spacing) {
+    createJavaFormatter: function(spacing) {
         return new JavaFormatter(spacing)
     }
 };
