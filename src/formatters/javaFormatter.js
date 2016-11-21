@@ -50,8 +50,8 @@ export default class JavaFormatter extends Formatter {
      * is taken.
      *
      * EXAMPLE:
-     * Selection start row: 11 ---- Selection end row: 11 ---- Offset: 5
-     * \----> Snippet range: [11 - 5, 11 + 5] = [6, 16]
+     * Selection start row: 11 ---- Selection end row: 11 ---- Offset: 6
+     * \----> Snippet range: [11 - 6, 11 + 6] = [5, 17]
      *
      * START:
      *
@@ -65,11 +65,14 @@ export default class JavaFormatter extends Formatter {
      * 8.  // ------------------
      * 9. @Test
      * 10. public void test2() {
-     * 11.     System.out.println("Test 1");
+     * 11.     System.out.println("Test 2");
      * 12. }
      * 13.
-     * 14. public void test3() {
-     * 15. ...
+     * 14. @Test
+     * 15. public void test3() {
+     * 16.     System.out.println("Test 3");
+     * 17. }
+     * 18. ...
      *
      * RESULT:
      *
