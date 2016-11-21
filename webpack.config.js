@@ -2,6 +2,7 @@ var webpack = require('webpack');
 
 module.exports = {
     entry: "./src/index.js",
+    target: 'node',
     module: {
         loaders: [
             {test: /\.json$/, loader: "json-loader"},
