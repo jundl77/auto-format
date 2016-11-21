@@ -1,6 +1,6 @@
 import ScopeNode from "./scopeTree"
 
-export default class Formatter {
+export default class AFormatter {
 
     constructor(formatUnit) {
         this.formatUnit = formatUnit

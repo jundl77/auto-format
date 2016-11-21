@@ -1,11 +1,19 @@
 import JavaFormatter from "./javaFormatter"
 
-export default function () {
-    this.createJavaFormatter = function (spacing) {
-        return new JavaFormatter(spacing)
+export default class Formatter {
+    constructor(spacing) {
+        this.spacing = spacing;
+        this.javaFormatter = null
     }
 
-    this.testModule = function () {
+    getJavaFormatter() {
+        if (this.javaFormatter === null) {
+            this.javaFormatter = new JavaFormatter(this.spacing)
+        }
+        return this.javaFormatter
+    }
+
+    testModule() {
         console.log("I am working")
     }
 }
