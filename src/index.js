@@ -1,20 +1,11 @@
 import JavaFormatter from "./javaFormatter"
 
-export default class Formatter {
-    constructor(spacing) {
-        this.spacing = spacing;
-        this.javaFormatter = null
-    }
-
-    getJavaFormatter() {
-        if (this.javaFormatter === null) {
-            this.javaFormatter = new JavaFormatter(this.spacing)
-        }
-        return this.javaFormatter
-    }
+export default Formatter = {
+    createJavaFormatter(spacing) {
+        return new JavaFormatter(spacing)
+    },
 
     testModule() {
         console.log("I am working")
     }
 }
-
