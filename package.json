@@ -38,10 +38,5 @@
     "test": "",
     "build": "webpack --progress --config webpack.config.js",
     "prepublish": "npm-run-all build test"
-  },
-  "babel": {
-    "presets": [
-      "es2015"
-    ]
   }
 }
