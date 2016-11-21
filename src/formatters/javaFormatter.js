@@ -1,4 +1,4 @@
-import Formatter from "./formatter"
+import Formatter from "../core/formatter"
 
 var SCOPE_ENTER_TOKEN = '{'
 var SCOPE_EXIT_TOKEN = '}'

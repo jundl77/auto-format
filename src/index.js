@@ -1,4 +1,4 @@
-import JavaFormatter from "./javaFormatter"
+import JavaFormatter from "./formatters/javaFormatter"
 
 const Formatter = {
     createJavaFormatter(spacing) {
