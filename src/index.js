@@ -1,6 +1,6 @@
 import JavaFormatter from "./javaFormatter"
 
-export default Formatter = {
+const Formatter = {
     createJavaFormatter(spacing) {
         return new JavaFormatter(spacing)
     },
@@ -9,3 +9,5 @@ export default Formatter = {
         console.log("I am working")
     }
 }
+
+export default Formatter
