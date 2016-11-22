@@ -45,7 +45,7 @@
     "prepublish": "npm-run-all build test"
   },
   "gh-pages-deploy": {
-    "staticpath": "./docs/auto-format/1.0.9",
+    "staticpath": "./docs",
     "prep": [],
     "post": [
       "clean-source"
