@@ -39,6 +39,20 @@
     "test": "",
     "build": "webpack -p",
     "generate-docs": "jsdoc --configure .jsdoc.json --verbose",
+    "deploy-docs": "gh-pages-deploy",
+    "clean-source": "rimraf README.md src webroot package.json",
     "prepublish": "npm-run-all build test"
+  },
+  "gh-pages-deploy": {
+    "staticpath": "./docs/auto-format/1.0.9",
+    "prep": [
+      "generate-docs"
+    ],
+    "post": [
+      "clean-source"
+    ],
+    "noprompt": false
   }
+}
+
 }
