@@ -45,9 +45,7 @@
   },
   "gh-pages-deploy": {
     "staticpath": "./docs/auto-format/1.0.9",
-    "prep": [
-      "generate-docs"
-    ],
+    "prep": [],
     "post": [
       "clean-source"
     ],
