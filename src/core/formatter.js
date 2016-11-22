@@ -15,18 +15,64 @@ export default class AFormatter {
      * @param formatUnit The token to be used for line indentations.
      */
     constructor(formatUnit) {
+        /**
+         * @private
+         */
         this.formatUnit = formatUnit
+
+        /**
+         * @private
+         */
         this.fullCodeArray = ''
+
+        /**
+         * @private
+         */
         this.startSelection = 0
+
+        /**
+         * @private
+         */
         this.endSelection = 0
+
+        /**
+         * @private
+         */
         this.snippetOffset = 0
+
+        /**
+         * @private
+         */
         this.bodyCommentToken = ''
+
+        /**
+         * @private
+         */
         this.simpleCommentToken = ''
 
+        /**
+         * @private
+         */
         this.expressionIdentifier = null
+
+        /**
+         * @private
+         */
         this.scopeEnterFunc = null
+
+        /**
+         * @private
+         */
         this.scopeExitFunc = null
+
+        /**
+         * @private
+         */
         this.identifyMethodSigFunc = null
+
+        /**
+         * @private
+         */
         this.identifySpecialStatement = null
     }
 
@@ -66,12 +112,16 @@ export default class AFormatter {
      * and end of the selection create a sort of range from which the snippet
      * is taken.
      *
-     * EXAMPLE:
-     * Selection start row: 11 ---- Selection end row: 11 ---- Offset: 6
-     * \----> Snippet range: [11 - 6, 11 + 6] = [5, 17]
+     * In the example below, the selection is identified to belong to test2()
+     * and thus only test2() is returned. If the method is longer than the
+     * offset, than only the part within the offset will be returned. No code
+     * is added to the range with the exception of comment lines above the
+     * selection, to close unfinished comments.
+     *
+     * @example
+     * <caption>Selection start row: 11 ---- Selection end row: 11 ---- Offset: 6 ----> Snippet range: [11 - 6, 11 + 6] = [5, 17]</caption>
      *
      * START:
-     *
      * 1.  @Test
      * 2.  public void test1() {
      * 3.      System.out.println("Test 1");
@@ -92,7 +142,6 @@ export default class AFormatter {
      * 18. ...
      *
      * RESULT:
-     *
      * 6.  // ------------------
      * 7.  // Perform test 2.
      * 8.  // ------------------
@@ -100,12 +149,6 @@ export default class AFormatter {
      * 10. public void test2() {
      * 11.     System.out.println("Test 1");
      * 12. }
-     *
-     * The selection is identified to belong to test2() and thus only test2()
-     * is returned. If the method is longer than the offset, than only the
-     * part within the offset will be returned. No code is added to the range
-     * with the exception of comment lines above the selection, to close
-     * unfinished comments.
      *
      * @param code The original code base in which the selection is.
      * @param startRow The start row of the selection in the code base.

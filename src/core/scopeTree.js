@@ -14,9 +14,24 @@ export default class ScopeTree {
      * @param start The start of the scope of this node.
      */
     constructor(parent, start) {
+        /**
+         * @private
+         */
         this.parent = parent
+
+        /**
+         * @private
+         */
         this.children = []
+
+        /**
+         * @private
+         */
         this.start = start
+
+        /**
+         * @private
+         */
         this.end = null
     }
 
@@ -95,8 +110,7 @@ export default class ScopeTree {
      * Particularly, this moves all left siblings of a node that only has an end
      * but not a start under it, making them his children.
      *
-     * Example:
-     * <pre><code>
+     * @example
      *  <-> : scope is open and closed
      *  <-  : scope is only opened but not closed
      *   -> : scope is only closed but never opened
@@ -113,7 +127,6 @@ export default class ScopeTree {
      *    |    |    |    |               |    |
      *   ok   ok   not  ok               |    |
      *             ok                   <->  <->
-     * </code></pre>
      */
     balance() {
         for (let i = 0; i < this.getChildren().length; i++) {

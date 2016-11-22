@@ -1,0 +1,6 @@
+{
+  "source": "./src",
+  "destination": "./docs",
+  "autoPrivate": true,
+  "access": ["public", "private"]
+}
