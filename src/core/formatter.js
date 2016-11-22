@@ -50,7 +50,7 @@ export default class AFormatter {
      */
     format(code, expressionIdentifier, scopeEnterFunc, scopeExitFunc) {
         return this.formatSnippet(code, null, null, null, expressionIdentifier, scopeEnterFunc,
-            scopeExitFunc, null, null)
+            scopeExitFunc, null, null, null, null)
     }
 
     /**
