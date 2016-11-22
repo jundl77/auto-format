@@ -1,5 +1,5 @@
 # auto-format
 
 [![Build Status](https://travis-ci.org/jundl77/auto-format.svg?branch=master)](https://travis-ci.org/jundl77/auto-format)
-[![npm](https://img.shields.io/npm/v/npm.svg)](https://github.com/jundl77/auto-format)
+[![npm](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/package/auto-format)
 [![Document](https://doc.esdoc.org/github.com/esdoc/esdoc/badge.svg?t=0)](https://doc.esdoc.org/github.com/jundl77/auto-format/)
