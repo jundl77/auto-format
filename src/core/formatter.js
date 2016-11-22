@@ -54,19 +54,82 @@ export default class AFormatter {
     }
 
     /**
+     * A slight variation of format(codeString). Useful if you want to display
+     * a code snippet around a selection of lines.
      *
-     * @param code
-     * @param startRow
-     * @param endRow
-     * @param offset
-     * @param expressionIdentifier
-     * @param scopeEnterFunc
-     * @param scopeExitFunc
-     * @param identifyMethodSigFunc
-     * @param identifySpecialStatement
-     * @param bodyCommentToken
-     * @param simpleCommentToken
-     * @returns {*}
+     * As a reference, look at the formatSnippet function in the JavaFormatter.
+     *
+     * In addition to indenting lines, formatSnippet takes a selection as a
+     * start and end row in a large slab of code and cuts out a snippet of
+     * code around this selection. The start and end of the snippet is based
+     * on an offset that is provided as a parameter. The offset with the start
+     * and end of the selection create a sort of range from which the snippet
+     * is taken.
+     *
+     * EXAMPLE:
+     * Selection start row: 11 ---- Selection end row: 11 ---- Offset: 6
+     * \----> Snippet range: [11 - 6, 11 + 6] = [5, 17]
+     *
+     * START:
+     *
+     * 1.  @Test
+     * 2.  public void test1() {
+     * 3.      System.out.println("Test 1");
+     * 4.  }
+     * 5.
+     * 6.  // ------------------
+     * 7.  // Perform test 2.
+     * 8.  // ------------------
+     * 9. @Test
+     * 10. public void test2() {
+     * 11.     System.out.println("Test 2");
+     * 12. }
+     * 13.
+     * 14. @Test
+     * 15. public void test3() {
+     * 16.     System.out.println("Test 3");
+     * 17. }
+     * 18. ...
+     *
+     * RESULT:
+     *
+     * 6.  // ------------------
+     * 7.  // Perform test 2.
+     * 8.  // ------------------
+     * 9. @Test
+     * 10. public void test2() {
+     * 11.     System.out.println("Test 1");
+     * 12. }
+     *
+     * The selection is identified to belong to test2() and thus only test2()
+     * is returned. If the method is longer than the offset, than only the
+     * part within the offset will be returned. No code is added to the range
+     * with the exception of comment lines above the selection, to close
+     * unfinished comments.
+     *
+     * @param code The original code base in which the selection is.
+     * @param startRow The start row of the selection in the code base.
+     * @param endRow The end row of the selection in the code base.
+     * @param offset The offset the defines the range on which to base the
+     *               snippet.
+     * @param expressionIdentifier Function that identifies if a line qualifies as an expression:
+     *                             An expression is defined as:
+     *                              - A line that ends with a termination token (e.g. ';')
+     *                              - A line that defines a scope start (e.g. '{')
+     *                              - A line that defines a scope end (e.g. '}')
+     *                              - A line that starts with a special character (e.g. '@')
+     *                              - A line that starts with a comment (e.g. '//')
+     *                              - An empty line (e.g. '')
+     * @param scopeEnterFunc Function that identifies if a new scope is entered in a line.
+     * @param scopeExitFunc Function that identifies if a scope is exited in a line.
+     * @param identifyMethodSigFunc Function that identifies if a line is a method signature.
+     * @param identifySpecialStatement Function that identifies if a line contains a special
+     *                                 statement (e.g. comment or '@' in Java)
+     * @param bodyCommentToken The token for 'body comments' (e.g. '*' in Java)
+     * @param simpleCommentToken Simple comment token (e.g. '//')
+     * @returns {*} An array of formatted lines that form the snippet, as well
+     *              as the start and end lines of the snippet in the original
+     *              code base.
      */
     formatSnippet(code, startRow, endRow, offset, expressionIdentifier, scopeEnterFunc,
                   scopeExitFunc, identifyMethodSigFunc, identifySpecialStatement,
@@ -151,10 +214,13 @@ export default class AFormatter {
     }
 
     /**
+     * Performs the following preliminary tasks:
+     *  - Fills open comments
+     *  - Removes extra method signatures (===> scope break so it will be removed later)
      *
-     * @param snippet
-     * @param selection
-     * @returns {Array.<T>|string}
+     * @param snippet The snippet, as an array of lines, to work on.
+     * @param selection The selection, as an array of lines, within the snippet.
+     * @returns {Array} Array of pre-formatted lines.
      * @private
      */
     _preFormatSnippet(snippet, selection) {
@@ -167,11 +233,17 @@ export default class AFormatter {
     }
 
     /**
+     * Format the prefix of a snippet. The prefix is defines as all lines above the
+     * selection. Performs the following tasks:
+     *  - Removes scopes that close but never open.
+     *  - Removes empty lines at beginning of snippet.
      *
-     * @param scopeTree
-     * @param array
-     * @param oldStart
-     * @returns {*[]}
+     * @param scopeTree The scope tree of the snippet.
+     * @param array The formatted snippet as an array of lines.
+     * @param oldStart The old start of the snippet in the original file
+     *                 (line number, starting with 1 not 0).
+     * @returns {*[]} Formatted prefix string with the new beginning of the snippet
+     *                in the original file (again index starting with 1).
      * @private
      */
     _formatPrefix(scopeTree, array, oldStart) {
@@ -200,10 +272,16 @@ export default class AFormatter {
     }
 
     /**
+     * Format the suffix of a snippet. The suffix is defines as all lines below the
+     * selection. Performs the following tasks:
+     *  - Removes methods and comments belonging to method below selection.
+     *  - Removes empty lines at end of snippet.
      *
-     * @param codeArray
-     * @param oldEnd
-     * @returns {*[]}
+     * @param codeArray The formatted suffix as an array of lines.
+     * @param oldEnd The old end of the snippet in the original file
+     *               (line number, starting with 1 not 0).
+     * @returns {*[]} Formatted suffix string with the new end of the snippet
+     *                in the original file (again index starting with 1).
      * @private
      */
     _formatSuffix(codeArray, oldEnd) {
@@ -229,9 +307,11 @@ export default class AFormatter {
     }
 
     /**
+     * Pre-formats an empty array by adding the indentations
+     * (the specified format unit).
      *
-     * @param array
-     * @param node
+     * @param array Array of lines of code.
+     * @param node Node of the scope tree.
      * @private
      */
     _preFormatArray(array, node) {
@@ -250,10 +330,11 @@ export default class AFormatter {
     }
 
     /**
+     * Adds indentations to the array from the start to the end index, inclusive.
      *
-     * @param array
-     * @param start
-     * @param end
+     * @param array Array of lines of code.
+     * @param start Start index of where to add indentations.
+     * @param end End index of where to stop adding indentations.
      * @private
      */
     _fillBucketRange(array, start, end) {
@@ -263,10 +344,13 @@ export default class AFormatter {
     }
 
     /**
+     * If an open comment is met, take all lines necessary to close it
+     * from the original file and append them to the snippet.
      *
-     * @param codeArray
-     * @param startLine
-     * @returns {*}
+     * @param codeArray Array of lines of code.
+     * @param startLine The start line of the snippet in the original file.
+     * @returns {*} A snippet as an array of lines of code with no more
+     *              open comments.
      * @private
      */
     _handleOpenComments(codeArray, startLine) {
@@ -280,9 +364,10 @@ export default class AFormatter {
     }
 
     /**
+     * Remove method signatures in the prefix that do not belong to the selection.
      *
-     * @param codeArray
-     * @returns {*}
+     * @param codeArray Array of lines of code (prefix).
+     * @returns {*} Prefix with no more extra method signatures.
      * @private
      */
     _removeExtraMethodSigAbove(codeArray) {
@@ -316,9 +401,10 @@ export default class AFormatter {
     }
 
     /**
+     * Remove method signatures in the suffix that do not belong to the selection.
      *
-     * @param codeArray
-     * @returns {*}
+     * @param codeArray Array of lines of code (suffix).
+     * @returns {*} Suffix with no more extra method signatures.
      * @private
      */
     _removeExtraMethodSigBelow(codeArray) {
@@ -338,9 +424,10 @@ export default class AFormatter {
     }
 
     /**
+     * Removes empty lines at beginning of snippet.
      *
-     * @param codeArray
-     * @returns {*}
+     * @param codeArray Array of lines of code.
+     * @returns {*} Code array with no empty lines at beginning.
      * @private
      */
     _trimBeginning(codeArray) {
@@ -359,9 +446,10 @@ export default class AFormatter {
     }
 
     /**
+     * Removes empty lines at end of snippet.
      *
-     * @param codeArray
-     * @returns {*}
+     * @param codeArray Array of lines of code.
+     * @returns {*} Code array with no empty lines at end.
      * @private
      */
     _trimEnd(codeArray) {
@@ -380,10 +468,15 @@ export default class AFormatter {
     }
 
     /**
+     * Splits the code array into three parts: prefix, selection, suffix.
      *
-     * @param codeArray
-     * @param selection
-     * @returns {*[]}
+     * Prefix: All lines above the selection.
+     * Suffix: All lines below the selection.
+     *
+     * @param codeArray Array of lines of code.
+     * @param selection Selection to split codeArray on.
+     * @returns {*[]} An array containing again the prefix, selection and suffix as
+     *                arrays of lines of code.
      * @private
      */
     _splitSelection(codeArray, selection) {
