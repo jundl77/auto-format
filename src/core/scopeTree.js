@@ -1,7 +1,8 @@
 /**
- * A scope tree is a tree that captures the scope of a piece of code. A node contains the start
- * and end of the scope. If start or end is null then the start or end is not in the code.
- * A parent node contains all scopes inside it as children nodes.
+ * A scope tree is a tree that captures the scope of a piece of code. A node
+ * contains the start and end of the scope. If start or end is null then the
+ * start or end is not in the code. A parent node contains all scopes inside
+ * it as children nodes.
  */
 export default class ScopeTree {
 
@@ -118,8 +119,11 @@ export default class ScopeTree {
 
             // Check if there is a lone closing scope
             if (child.getStart() === null && child.getEnd() !== null) {
-                // Pretend this lone closing scope had a matching opening scope at the beginning
-                // and turn all previous siblings into children of the closing scope
+
+                /* Pretend this lone closing scope had a matching opening scope at the
+                 * beginning and turn all previous siblings into children of the closing
+                 * scope.
+                 */
                 for (let j = 0; j < i; j++) {
                     let sibling = this.getChildren()[0]
                     this.getChildren().splice(0, 1)
@@ -180,8 +184,8 @@ export default class ScopeTree {
                 lines.unshift(remaining)
                 return child.build(lines, index, scopeEnterFunc, scopeExitFunc)
             } else {
-                node = child // This allows us to check if the scope is closed in the same line and
-                             // if not we pass on the child as the next node
+                node = child // This allows us to check if the scope is closed in the
+                             // same line and if not we pass on the child as the next node
             }
         } else if (enterIndex !== null && exitIndex !== null) {
             // Check for this case: } foo {
@@ -204,7 +208,8 @@ export default class ScopeTree {
                 let child = new ScopeTree(node, null)
                 child.close(index)
                 node.addChild(child)
-                node = child // this avoids a null pointer exception when we call node.getParent() below
+                node = child // This avoids a null pointer exception when we call
+                             // node.getParent() below
             } else {
                 node.close(index)
             }

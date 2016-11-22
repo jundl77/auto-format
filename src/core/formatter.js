@@ -1,11 +1,21 @@
-import ScopeNode from "./scopeTree"
+import ScopeNode from "./scopeTree";
 
+/**
+ * This is the core formatter. It contains most of the logic behind the formatting,
+ * and it is written in such a way that it is easily extendable to other programming
+ * languages. To create a formatter for a new programming language, extend this class
+ * and follow the JavaFormatter as an example.
+ */
 export default class AFormatter {
 
+    /**
+     * Create a new AFormatter (abstract formatter).
+     *
+     * @param formatUnit The token to be used for line indentations.
+     */
     constructor(formatUnit) {
         this.formatUnit = formatUnit
         this.fullCodeArray = ''
-        this.selection = ''
         this.startSelection = 0
         this.endSelection = 0
         this.snippetOffset = 0
@@ -19,13 +29,48 @@ export default class AFormatter {
         this.identifySpecialStatement = null
     }
 
+    /**
+     * Format a string of code. The string will be cut into lines and lines
+     * will be indented accordingly to their scope.
+     *
+     * As a reference, look at the format function in the JavaFormatter.
+     *
+     * @param code String of code to format.
+     * @param expressionIdentifier Function that identifies if a line qualifies as an expression:
+     *                             An expression is defined as:
+     *                              - A line that ends with a termination token (e.g. ';')
+     *                              - A line that defines a scope start (e.g. '{')
+     *                              - A line that defines a scope end (e.g. '}')
+     *                              - A line that starts with a special character (e.g. '@')
+     *                              - A line that starts with a comment (e.g. '//')
+     *                              - An empty line (e.g. '')
+     * @param scopeEnterFunc Function that identifies if a new scope is entered in a line.
+     * @param scopeExitFunc Function that identifies if a scope is exited in a line.
+     * @returns {*} String with formatted code.
+     */
     format(code, expressionIdentifier, scopeEnterFunc, scopeExitFunc) {
         return this.formatSnippet(code, null, null, null, expressionIdentifier, scopeEnterFunc,
             scopeExitFunc, null, null)
     }
 
-    formatSnippet(code, startRow, endRow, offset, expressionIdentifier, scopeEnterFunc, scopeExitFunc,
-                  identifyMethodSigFunc, identifySpecialStatement, bodyCommentToken, simpleCommentToken) {
+    /**
+     *
+     * @param code
+     * @param startRow
+     * @param endRow
+     * @param offset
+     * @param expressionIdentifier
+     * @param scopeEnterFunc
+     * @param scopeExitFunc
+     * @param identifyMethodSigFunc
+     * @param identifySpecialStatement
+     * @param bodyCommentToken
+     * @param simpleCommentToken
+     * @returns {*}
+     */
+    formatSnippet(code, startRow, endRow, offset, expressionIdentifier, scopeEnterFunc,
+                  scopeExitFunc, identifyMethodSigFunc, identifySpecialStatement,
+                  bodyCommentToken, simpleCommentToken) {
         // Initialize
         this.fullCodeArray = code.split('\n')
         this.startSelection = startRow
@@ -42,18 +87,22 @@ export default class AFormatter {
         let codeArray = this.fullCodeArray
 
         // In case we have a snippet, find the snippet
-        let snippetPresent = this.startSelection !== null && this.endSelection !== null && offset !== null
+        let snippetPresent = this.startSelection !== null && this.endSelection !== null
+            && offset !== null
         let snippet = []
         if (snippetPresent) {
-            snippet = [this.fullCodeArray.slice(this.startSelection - 1, this.endSelection), this.fullCodeArray
-                .slice(this.startSelection - offset - 1, this.endSelection + offset)]
+            snippet = [this.fullCodeArray.slice(this.startSelection - 1, this.endSelection),
+                this.fullCodeArray.slice(this.startSelection - offset - 1,
+                    this.endSelection + offset)]
             codeArray = this._preFormatSnippet(snippet[1], snippet[0])
         }
 
         // Build and balance the scope tree
         codeArray = codeArray.map(line => line.trim())
         let scopeTree = new ScopeNode(null, null)
-        scopeTree.build(codeArray.slice(), 0, this.scopeEnterFunc, this.scopeExitFunc) // copy array because it is consumed
+
+        // copy array because it is consumed
+        scopeTree.build(codeArray.slice(), 0, this.scopeEnterFunc, this.scopeExitFunc)
         scopeTree.balance()
 
         // Init formatted array
@@ -71,7 +120,8 @@ export default class AFormatter {
         // Add spaces after lines that do not qualify as an expression (e.g. let str = "hello" +)
         for (let i = 0; i < formattedArray.length; i++) {
             if (!this.expressionIdentifier(formattedArray, i) && formattedArray.length > i + 1) {
-                if (this.scopeEnterFunc(formattedArray, i + 1) === null && this.scopeExitFunc(formattedArray, i + 1) === null) {
+                if (this.scopeEnterFunc(formattedArray, i + 1) === null
+                    && this.scopeExitFunc(formattedArray, i + 1) === null) {
                     formattedArray[i + 1] = this.formatUnit + formattedArray[i + 1]
                 }
             }
@@ -85,8 +135,10 @@ export default class AFormatter {
 
         // Format prefix and suffix
         let selection = this._splitSelection(formattedArray, snippet[0])
-        let prefixResult = this._formatPrefix(scopeTree, selection[0], this.startSelection - selection[0].length)
-        let suffixResult = this._formatSuffix(selection[2], this.endSelection + selection[2].length)
+        let prefixResult = this._formatPrefix(scopeTree, selection[0],
+            this.startSelection - selection[0].length)
+        let suffixResult = this._formatSuffix(selection[2],
+            this.endSelection + selection[2].length)
         let range = [prefixResult[1], suffixResult[1]]
 
         // Turn array into string
@@ -98,14 +150,30 @@ export default class AFormatter {
         return [prefixResult[0], selectionString, suffixResult[0], range]
     }
 
+    /**
+     *
+     * @param snippet
+     * @param selection
+     * @returns {Array.<T>|string}
+     * @private
+     */
     _preFormatSnippet(snippet, selection) {
         let splitSnippet = this._splitSelection(snippet, selection)
-        let prefixArray = this._handleOpenComments(splitSnippet[0], this.startSelection - this.snippetOffset - 1)
+        let prefixArray = this._handleOpenComments(splitSnippet[0],
+            this.startSelection - this.snippetOffset - 1)
         prefixArray = this._removeExtraMethodSigAbove(prefixArray)
         let suffixArray = this._removeExtraMethodSigBelow(splitSnippet[2])
         return prefixArray.concat(splitSnippet[1].concat(suffixArray))
     }
 
+    /**
+     *
+     * @param scopeTree
+     * @param array
+     * @param oldStart
+     * @returns {*[]}
+     * @private
+     */
     _formatPrefix(scopeTree, array, oldStart) {
         let originalLength = array.length
 
@@ -131,6 +199,13 @@ export default class AFormatter {
         return [result, oldStart + offset]
     }
 
+    /**
+     *
+     * @param codeArray
+     * @param oldEnd
+     * @returns {*[]}
+     * @private
+     */
     _formatSuffix(codeArray, oldEnd) {
         let originalLength = codeArray.length
         let codeFound = false
@@ -153,6 +228,12 @@ export default class AFormatter {
         return [codeArray.reduce(((acc, line) => acc + '\n' + line)), oldEnd - offset]
     }
 
+    /**
+     *
+     * @param array
+     * @param node
+     * @private
+     */
     _preFormatArray(array, node) {
         let start = node.getStart()
         let end = node.getEnd()
@@ -168,15 +249,29 @@ export default class AFormatter {
         node.getChildren().forEach(child => this._preFormatArray(array, child))
     }
 
+    /**
+     *
+     * @param array
+     * @param start
+     * @param end
+     * @private
+     */
     _fillBucketRange(array, start, end) {
         for (let i = start; i <= end; i++) {
             array[i] += this.formatUnit
         }
     }
 
+    /**
+     *
+     * @param codeArray
+     * @param startLine
+     * @returns {*}
+     * @private
+     */
     _handleOpenComments(codeArray, startLine) {
-        if (codeArray.length > 0 && startLine - 1 < this.fullCodeArray.length && codeArray[0].trim()
-                .startsWith(this.bodyCommentToken)) {
+        if (codeArray.length > 0 && startLine - 1 < this.fullCodeArray.length
+            && codeArray[0].trim().startsWith(this.bodyCommentToken)) {
             codeArray.unshift(this.fullCodeArray[startLine - 1])
             return this._handleOpenComments(codeArray, startLine - 1)
         } else {
@@ -184,6 +279,12 @@ export default class AFormatter {
         }
     }
 
+    /**
+     *
+     * @param codeArray
+     * @returns {*}
+     * @private
+     */
     _removeExtraMethodSigAbove(codeArray) {
         let methodSigCount = 0
         let index = codeArray.length - 1
@@ -191,15 +292,16 @@ export default class AFormatter {
             let line = codeArray[index].trim()
             if (this.identifyMethodSigFunc(line) && methodSigCount === 0) {
                 methodSigCount++
-            } else if(this.identifyMethodSigFunc(line) && methodSigCount === 1) {
+            } else if (this.identifyMethodSigFunc(line) && methodSigCount === 1) {
                 codeArray.splice(index, 1)
                 methodSigCount++
-            } else if(this.scopeEnterFunc([line], 0) !== null && index - 1 > 0 && methodSigCount === 1) {
+            } else if (this.scopeEnterFunc([line], 0) !== null && index - 1 > 0
+                && methodSigCount === 1) {
                 if (this.identifyMethodSigFunc(codeArray[index - 1])) {
                     codeArray.splice(index, 1)
                     methodSigCount++
                 }
-            } else if(methodSigCount > 1) {
+            } else if (methodSigCount > 1) {
                 codeArray.splice(index, 1)
             }
 
@@ -213,6 +315,12 @@ export default class AFormatter {
         return codeArray
     }
 
+    /**
+     *
+     * @param codeArray
+     * @returns {*}
+     * @private
+     */
     _removeExtraMethodSigBelow(codeArray) {
         let index = 0
         let found = false
@@ -229,6 +337,12 @@ export default class AFormatter {
         return codeArray
     }
 
+    /**
+     *
+     * @param codeArray
+     * @returns {*}
+     * @private
+     */
     _trimBeginning(codeArray) {
         let canTrim = true
 
@@ -244,6 +358,12 @@ export default class AFormatter {
         return codeArray
     }
 
+    /**
+     *
+     * @param codeArray
+     * @returns {*}
+     * @private
+     */
     _trimEnd(codeArray) {
         let canTrim = true
 
@@ -259,6 +379,13 @@ export default class AFormatter {
         return codeArray
     }
 
+    /**
+     *
+     * @param codeArray
+     * @param selection
+     * @returns {*[]}
+     * @private
+     */
     _splitSelection(codeArray, selection) {
         let startArray = []
         let selectionArray = []
@@ -268,7 +395,8 @@ export default class AFormatter {
 
         codeArray.forEach(line => {
             if (selection.length !== 0) {
-                if (!selectionDone && selection.reduce((result, sLine) => result || line.includes(sLine.trim()), false)) {
+                if (!selectionDone && selection.reduce((result, sLine) => result
+                    || line.includes(sLine.trim()), false)) {
                     selectionFound = true
                     selectionArray.push(line)
                 } else if (selectionFound) {
