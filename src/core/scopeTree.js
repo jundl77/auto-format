@@ -1,4 +1,16 @@
+/**
+ * A scope tree is a tree that captures the scope of a piece of code. A node contains the start
+ * and end of the scope. If start or end is null then the start or end is not in the code.
+ * A parent node contains all scopes inside it as children nodes.
+ */
 export default class ScopeTree {
+
+    /**
+     * Creates a new node.
+     *
+     * @param parent The parent node.
+     * @param start The start of the scope of this node.
+     */
     constructor(parent, start) {
         this.parent = parent
         this.children = []
@@ -6,34 +18,100 @@ export default class ScopeTree {
         this.end = null
     }
 
+    /**
+     * Get the start of the scope.
+     *
+     * @returns {*|null} The start of the scope, or null if not defined.
+     */
     getStart() {
         return this.start
     }
 
+    /**
+     * Get the end of the scope.
+     *
+     * @returns {*|null} The end of the scope, or null if not defined.
+     */
     getEnd() {
         return this.end
     }
 
+    /**
+     * Get the parent of this node. Returns null if this is the root node.
+     *
+     * @returns {*} The parent of this node, or null if this is the root node.
+     */
     getParent() {
         return this.parent
     }
 
+    /**
+     * Get an array of all children of this node.
+     *
+     * @returns {Array} An array of all children of this node.
+     */
     getChildren() {
         return this.children
     }
 
+    /**
+     * Add a child to this node.
+     *
+     * @param child The child to add to this node, should also be of type ScopeTree.
+     */
     addChild(child) {
         this.children.push(child)
     }
 
+    /**
+     * Close this scope. This means the end of the scope has been reached.
+     *
+     * @param line The line that the scope ends at.
+     */
     close(line)  {
         this.end = line
     }
 
+    /**
+     * Returns true if the scope of this node is closed (meaning the scope has
+     * a start and an end point)
+     *
+     * @returns {boolean} True if the scope for this node is defined, else false.
+     */
     isClosed() {
         return this.start !== null && this.end !== null
     }
 
+    /**
+     * Balance the tree. This enforces an ordering of the nodes in the tree such
+     * that parent nodes are always 1 scope above their child nodes.
+     *
+     * By nature, the tree will be built in a balanced fashion. However because
+     * we might be dealing with snippets of code scope entries or exits (i.e. brackets)
+     * might be missing, which puts the tree out of balance. This method fixes that.
+     *
+     * Particularly, this moves all left siblings of a node that only has an end
+     * but not a start under it, making them his children.
+     *
+     * Example:
+     *
+     *  <-> : scope is open and closed
+     *  <-  : scope is only opened but not closed
+     *   -> : scope is only closed but never opened
+     *
+     * IMBALANCED TREE                BALANCED TREE
+     *  -root-                         -root-
+     *    |                              |
+     *    |---------------               |-----
+     *    |    |    |    |               |    |
+     *    |    |    |    |               |    |
+     *   <->  <->   ->  <-    =======>   ->  <-
+     *                                   |
+     *    ^    ^    ^    ^               |-----
+     *    |    |    |    |               |    |
+     *   ok   ok   not  ok               |    |
+     *             ok                   <->  <->
+     */
     balance() {
         for (let i = 0; i < this.getChildren().length; i++) {
             let child = this.getChildren()[i]
@@ -53,16 +131,32 @@ export default class ScopeTree {
         }
     }
 
-    traverse(applyFunc, acc) {
-        if (this.getChildren().length > 0) {
-            return this.getChildren()
-                .map(node => node.traverse(applyFunc, acc))
-                .reduce((acc, node) => applyFunc(node, acc))
-        } else {
-            return applyFunc(this, acc)
-        }
-    }
-
+    /**
+     * Builds the scope tree. This function is designed in such a way that it can
+     * build scope trees over a variety of different programming languages. That
+     * is why as a parameter, the function takes two functions, each which
+     * determine where the scope starts or ends in a current line, if it does at
+     * all. These functions NEED to have the following signatures:
+     *
+     * Index:Integer scopeEnterFunc(arrayOfAllLines:Array, lineToCheckIndex:Integer)
+     * Index:Integer scopeExitFunc(arrayOfAllLines:Array, lineToCheckIndex:Integer)
+     *
+     * Both functions take the full array of lines and the index of the line to
+     * examine, and return the column within the line at which the scope is entered
+     * or exited. If there is no scope change in the line, null must be returned.
+     *
+     * @param lines Array of lines to build the scope tree over.
+     * @param index Current line number.
+     * @param scopeEnterFunc Function with the above signature. It takes the full
+     *        array of lines and the index of the line to examine, and returns
+     *        the column within the line at which the scope is entered. If no scope
+     *        is entered in the line, null must be returned.
+     * @param scopeExitFunc Function with the above signature. It takes the full
+     *        array of lines and the index of the line to examine, and returns
+     *        the column within the line at which the scope is exited. If no scope
+     *        is exited in the line, null must be returned.
+     * @returns {*} The root node of the scope tree.
+     */
     build(lines, index, scopeEnterFunc, scopeExitFunc) {
         let node = this
         if (lines.length === 0) {
