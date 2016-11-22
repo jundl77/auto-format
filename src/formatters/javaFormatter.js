@@ -14,7 +14,7 @@ var COMMENT_TOKENS = [COMMENT_START_TOKEN, COMMENT_START_TOKEN_2, COMMENT_BODY_T
 var PROTECTED_NON_METHOD_TOKENS = ['return', 'new']
 
 /**
- * The JavaFormatter is auto-formatter implementation for java.
+ * JavaFormatter is the auto-formatter implementation for Java.
  */
 export default class JavaFormatter extends Formatter {
     /**
