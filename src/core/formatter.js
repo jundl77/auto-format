@@ -11,6 +11,7 @@ export default class AFormatter {
     /**
      * Create a new AFormatter (abstract formatter).
      *
+     * @constructor
      * @param formatUnit The token to be used for line indentations.
      */
     constructor(formatUnit) {
@@ -37,16 +38,15 @@ export default class AFormatter {
      *
      * @param code String of code to format.
      * @param expressionIdentifier Function that identifies if a line qualifies as an expression:
-     *                             An expression is defined as:
-     *                              - A line that ends with a termination token (e.g. ';')
-     *                              - A line that defines a scope start (e.g. '{')
-     *                              - A line that defines a scope end (e.g. '}')
-     *                              - A line that starts with a special character (e.g. '@')
-     *                              - A line that starts with a comment (e.g. '//')
-     *                              - An empty line (e.g. '')
+     * - A line that ends with a termination token (e.g. ';')
+     * - A line that defines a scope start (e.g. '\{')
+     * - A line that defines a scope end (e.g. '\}')
+     * - A line that starts with a special character (e.g. '@')
+     * - A line that starts with a comment (e.g. '//')
+     * - An empty line (e.g. '')
      * @param scopeEnterFunc Function that identifies if a new scope is entered in a line.
      * @param scopeExitFunc Function that identifies if a scope is exited in a line.
-     * @returns {*} String with formatted code.
+     * @returns {String} String with formatted code.
      */
     format(code, expressionIdentifier, scopeEnterFunc, scopeExitFunc) {
         return this.formatSnippet(code, null, null, null, expressionIdentifier, scopeEnterFunc,
@@ -113,13 +113,13 @@ export default class AFormatter {
      * @param offset The offset the defines the range on which to base the
      *               snippet.
      * @param expressionIdentifier Function that identifies if a line qualifies as an expression:
-     *                             An expression is defined as:
-     *                              - A line that ends with a termination token (e.g. ';')
-     *                              - A line that defines a scope start (e.g. '{')
-     *                              - A line that defines a scope end (e.g. '}')
-     *                              - A line that starts with a special character (e.g. '@')
-     *                              - A line that starts with a comment (e.g. '//')
-     *                              - An empty line (e.g. '')
+     * An expression is defined as:
+     * - A line that ends with a termination token (e.g. ';')
+     * - A line that defines a scope start (e.g. '\{')
+     * - A line that defines a scope end (e.g. '\}')
+     * - A line that starts with a special character (e.g. '@')
+     * - A line that starts with a comment (e.g. '//')
+     * - An empty line (e.g. '')
      * @param scopeEnterFunc Function that identifies if a new scope is entered in a line.
      * @param scopeExitFunc Function that identifies if a scope is exited in a line.
      * @param identifyMethodSigFunc Function that identifies if a line is a method signature.
@@ -127,7 +127,7 @@ export default class AFormatter {
      *                                 statement (e.g. comment or '@' in Java)
      * @param bodyCommentToken The token for 'body comments' (e.g. '*' in Java)
      * @param simpleCommentToken Simple comment token (e.g. '//')
-     * @returns {*} An array of formatted lines that form the snippet, as well
+     * @returns {Array|String} An array of formatted lines that form the snippet, as well
      *              as the start and end lines of the snippet in the original
      *              code base.
      */
@@ -242,7 +242,7 @@ export default class AFormatter {
      * @param array The formatted snippet as an array of lines.
      * @param oldStart The old start of the snippet in the original file
      *                 (line number, starting with 1 not 0).
-     * @returns {*[]} Formatted prefix string with the new beginning of the snippet
+     * @returns {Array} Formatted prefix string with the new beginning of the snippet
      *                in the original file (again index starting with 1).
      * @private
      */
@@ -280,7 +280,7 @@ export default class AFormatter {
      * @param codeArray The formatted suffix as an array of lines.
      * @param oldEnd The old end of the snippet in the original file
      *               (line number, starting with 1 not 0).
-     * @returns {*[]} Formatted suffix string with the new end of the snippet
+     * @returns {Array} Formatted suffix string with the new end of the snippet
      *                in the original file (again index starting with 1).
      * @private
      */
@@ -475,7 +475,7 @@ export default class AFormatter {
      *
      * @param codeArray Array of lines of code.
      * @param selection Selection to split codeArray on.
-     * @returns {*[]} An array containing again the prefix, selection and suffix as
+     * @returns {Array} An array containing again the prefix, selection and suffix as
      *                arrays of lines of code.
      * @private
      */

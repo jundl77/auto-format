@@ -20,6 +20,7 @@ export default class JavaFormatter extends Formatter {
     /**
      * Create a new JavaFormatter
      *
+     * @constructor
      * @param formatUnit The token to be used for line indentations.
      */
     constructor(formatUnit) {
@@ -56,7 +57,7 @@ export default class JavaFormatter extends Formatter {
      * \----> Snippet range: [11 - 6, 11 + 6] = [5, 17]
      *
      * START:
-     *
+     * <pre><code>
      * 1.  @Test
      * 2.  public void test1() {
      * 3.      System.out.println("Test 1");
@@ -75,9 +76,10 @@ export default class JavaFormatter extends Formatter {
      * 16.     System.out.println("Test 3");
      * 17. }
      * 18. ...
+     * </code></pre>
      *
      * RESULT:
-     *
+     * <pre><code>
      * 6.  // ------------------
      * 7.  // Perform test 2.
      * 8.  // ------------------
@@ -85,6 +87,7 @@ export default class JavaFormatter extends Formatter {
      * 10. public void test2() {
      * 11.     System.out.println("Test 1");
      * 12. }
+     * </code></pre>
      *
      * The selection is identified to belong to test2() and thus only test2()
      * is returned. If the method is longer than the offset, than only the
@@ -117,8 +120,8 @@ export default class JavaFormatter extends Formatter {
      *
      * An expression is defined as:
      * - A line that ends with a termination token (e.g. ';')
-     * - A line that defines a scope start (e.g. '{')
-     * - A line that defines a scope end (e.g. '}')
+     * - A line that defines a scope start (e.g. '\{')
+     * - A line that defines a scope end (e.g. '\}')
      * - A line that starts with a special character (e.g. '@')
      * - A line that starts with a comment (e.g. '//')
      * - An empty line (e.g. '')

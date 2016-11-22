@@ -9,6 +9,7 @@ export default class ScopeTree {
     /**
      * Creates a new node.
      *
+     * @constructor
      * @param parent The parent node.
      * @param start The start of the scope of this node.
      */
@@ -95,7 +96,7 @@ export default class ScopeTree {
      * but not a start under it, making them his children.
      *
      * Example:
-     *
+     * <pre><code>
      *  <-> : scope is open and closed
      *  <-  : scope is only opened but not closed
      *   -> : scope is only closed but never opened
@@ -112,6 +113,7 @@ export default class ScopeTree {
      *    |    |    |    |               |    |
      *   ok   ok   not  ok               |    |
      *             ok                   <->  <->
+     * </code></pre>
      */
     balance() {
         for (let i = 0; i < this.getChildren().length; i++) {
