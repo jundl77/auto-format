@@ -13,7 +13,7 @@ Please see [contribute](#contribute) if you would like to contribute. Help is al
 
 ![](https://raw.githubusercontent.com/jundl77/auto-format/readme/images/auto-format.gif)
 
-More comming soon! For now check out https://exemplator.xyz where all code samples are formatted
+Fixing the quality soon! For now check out https://exemplator.xyz where all code samples are formatted
 with this library.
 
 [Live example](https://runkit.com/jundl77/auto-format.format) of *format* method.
