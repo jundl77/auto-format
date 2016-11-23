@@ -6,13 +6,15 @@
 
 An easy to use, light-weight library to auto-format code in javascript. Works well with code highlighting libraries to display beautiful, uniformly formatted code. 
 
-As of right now only Java can be formatted properly, although you will probably get decent results with any language that uses '{' and '}' to mark scopes. However the library is very extensible, in fact you only have to write 3 methods, so it is easy to add support for more languages.
-Please see [contribute](#contribute) if you would like to contribute. Help is always appreciated!
+As of right now only Java can be formatted properly, although you will probably get decent results with any language that uses '{' and '}' to mark scopes. Further more the library is very extensible, in fact you only have to implement 5 methods to add support for more languages.
+Please see [contribute](#contribute) if you would like to contribute. Help is always welcome!
 
 ## Examples
 
 Detailed examples comming soon! For now check out https://exemplator.xyz where all code is being formatted 
 with this library.
+
+Live example for [*format*](https://runkit.com/jundl77/auto-format.format)
 
 ## Install
 
@@ -20,7 +22,7 @@ Run ` npm install auto-format --save`
 
 ## Usage
 
-As of right now, only Java is supported.
+As of right now, only fully Java is supported.
 
 ES6: 
 ```es6 
@@ -49,7 +51,7 @@ be indented accordingly to their scope.
 `unformattedCode` : A string of unformatted code (including line breaks).
 
 ##### -- Return:
-`formattedCode` : A string of formatted code. All lines will have been correctly
+`formattedCode` : An array lines of code. All lines will have been correctly
                   indented according to their scope.
                   
 ***
@@ -68,9 +70,9 @@ var formattedCode = javaFormatter.formatSnippet(unformattedCode, selectionStartR
 ```
 
 ##### -- Parameters:
-`indentToken` :
+`indentToken` : The token used to indent lines (e.g. 2 or 4 spaces).
 
-`unformattedCode` :
+`unformattedCode` : A string of unformatted code (including line breaks).
 
 `selectionStartRow` :
 
