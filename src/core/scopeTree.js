@@ -38,7 +38,7 @@ export default class ScopeTree {
     /**
      * Get the start of the scope.
      *
-     * @returns {*|null} The start of the scope, or null if not defined.
+     * @returns {Number} The start of the scope, or null if not defined.
      */
     getStart() {
         return this.start
@@ -47,7 +47,7 @@ export default class ScopeTree {
     /**
      * Get the end of the scope.
      *
-     * @returns {*|null} The end of the scope, or null if not defined.
+     * @returns {Number} The end of the scope, or null if not defined.
      */
     getEnd() {
         return this.end
@@ -56,7 +56,7 @@ export default class ScopeTree {
     /**
      * Get the parent of this node. Returns null if this is the root node.
      *
-     * @returns {*} The parent of this node, or null if this is the root node.
+     * @returns {ScopeTree} The parent of this node, or null if this is the root node.
      */
     getParent() {
         return this.parent
@@ -93,7 +93,7 @@ export default class ScopeTree {
      * Returns true if the scope of this node is closed (meaning the scope has
      * a start and an end point)
      *
-     * @returns {boolean} True if the scope for this node is defined, else false.
+     * @returns {Boolean} True if the scope for this node is defined, else false.
      */
     isClosed() {
         return this.start !== null && this.end !== null
@@ -174,7 +174,7 @@ export default class ScopeTree {
      *        array of lines and the index of the line to examine, and returns
      *        the column within the line at which the scope is exited. If no scope
      *        is exited in the line, null must be returned.
-     * @returns {*} The root node of the scope tree.
+     * @returns {ScopeTree} The root node of the scope tree.
      */
     build(lines, index, scopeEnterFunc, scopeExitFunc) {
         let node = this
