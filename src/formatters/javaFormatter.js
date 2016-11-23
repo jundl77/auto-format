@@ -40,7 +40,7 @@ export default class JavaFormatter extends Formatter {
      * will be indented accordingly to their scope.
      *
      * @param codeString The string of code to format.
-     * @returns {*} An array of formatted lines.
+     * @returns {Array} An array of formatted lines.
      */
     format(codeString) {
         return this.formatSnippet(codeString, null, null, null)
@@ -100,9 +100,9 @@ export default class JavaFormatter extends Formatter {
      * @param endRow The end row of the selection in the code base.
      * @param offset The offset the defines the range on which to base the
      *               snippet.
-     * @returns {*} An array of formatted lines that form the snippet, as well
-     *              as the start and end lines of the snippet in the original
-     *              code base.
+     * @returns {Array} An array of formatted lines that form the snippet, separated
+     *              into prefix selection and suffix, as well as the start and
+     *              end lines of the snippet in the original code base.
      */
     formatSnippet(code, startRow, endRow, offset) {
         return super.formatSnippet(code, startRow, endRow, offset,
@@ -128,7 +128,7 @@ export default class JavaFormatter extends Formatter {
      *
      * @param codeArray An array of lines of code.
      * @param index The index of the relevant line in the code array.
-     * @returns {*} True if the line qualifies as an expression, else false.
+     * @returns {Boolean} True if the line qualifies as an expression, else false.
      * @private
      */
     _expressionIdentifier(codeArray, index) {
@@ -149,7 +149,7 @@ export default class JavaFormatter extends Formatter {
      *
      * @param codeArray An array of lines of code.
      * @param index The index of the relevant line in the code array.
-     * @returns {*} The position in the line where the new scope starts or null
+     * @returns {Number} The position in the line where the new scope starts or null
      *              if this line does not start a new scope.
      * @private
      */
@@ -163,7 +163,7 @@ export default class JavaFormatter extends Formatter {
      *
      * @param codeArray An array of lines of code.
      * @param index The index of the relevant line in the code array.
-     * @returns {*} The position in the line where the scope ends or null
+     * @returns {Number} The position in the line where the scope ends or null
      *              if this line does not end a scope.
      * @private
      */
@@ -177,7 +177,7 @@ export default class JavaFormatter extends Formatter {
      * @param codeArray An array of lines of code.
      * @param index The index of the relevant line in the code array.
      * @param token The token to find in the line.
-     * @returns {*} The position in the line where the scope starts or ends or
+     * @returns {Number} The position in the line where the scope starts or ends or
      *              null if this line does neither.
      * @private
      */
@@ -202,7 +202,7 @@ export default class JavaFormatter extends Formatter {
      * - A line that starts with a comment (e.g. '//')
      *
      * @param line The line to check for a special statement.
-     * @returns {boolean|*} True if the line contains a special statement, else false.
+     * @returns {Boolean} True if the line contains a special statement, else false.
      * @private
      */
     _checkForSpecialStatement(line) {
@@ -215,7 +215,7 @@ export default class JavaFormatter extends Formatter {
      * Checks if a line is a method signature.
      *
      * @param line The line to check for.
-     * @returns {boolean} True if the line is a method signature, else false.
+     * @returns {Boolean} True if the line is a method signature, else false.
      * @private
      */
     _checkForFunction(line) {

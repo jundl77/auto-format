@@ -92,7 +92,7 @@ export default class AFormatter {
      * - An empty line (e.g. '')
      * @param scopeEnterFunc Function that identifies if a new scope is entered in a line.
      * @param scopeExitFunc Function that identifies if a scope is exited in a line.
-     * @returns {String} String with formatted code.
+     * @returns {Array} An array of formatted lines.
      */
     format(code, expressionIdentifier, scopeEnterFunc, scopeExitFunc) {
         return this.formatSnippet(code, null, null, null, expressionIdentifier, scopeEnterFunc,
@@ -170,9 +170,9 @@ export default class AFormatter {
      *                                 statement (e.g. comment or '@' in Java)
      * @param bodyCommentToken The token for 'body comments' (e.g. '*' in Java)
      * @param simpleCommentToken Simple comment token (e.g. '//')
-     * @returns {Array|String} An array of formatted lines that form the snippet, as well
-     *              as the start and end lines of the snippet in the original
-     *              code base.
+     * @returns {Array} An array of formatted lines that form the snippet, separated
+     *              into prefix selection and suffix, as well as the start and
+     *              end lines of the snippet in the original code base.
      */
     formatSnippet(code, startRow, endRow, offset, expressionIdentifier, scopeEnterFunc,
                   scopeExitFunc, identifyMethodSigFunc, identifySpecialStatement,
@@ -392,7 +392,7 @@ export default class AFormatter {
      *
      * @param codeArray Array of lines of code.
      * @param startLine The start line of the snippet in the original file.
-     * @returns {*} A snippet as an array of lines of code with no more
+     * @returns {Array} A snippet as an array of lines of code with no more
      *              open comments.
      * @private
      */
@@ -410,7 +410,7 @@ export default class AFormatter {
      * Remove method signatures in the prefix that do not belong to the selection.
      *
      * @param codeArray Array of lines of code (prefix).
-     * @returns {*} Prefix with no more extra method signatures.
+     * @returns {Array} Prefix with no more extra method signatures.
      * @private
      */
     _removeExtraMethodSigAbove(codeArray) {
@@ -447,7 +447,7 @@ export default class AFormatter {
      * Remove method signatures in the suffix that do not belong to the selection.
      *
      * @param codeArray Array of lines of code (suffix).
-     * @returns {*} Suffix with no more extra method signatures.
+     * @returns {Array} Suffix with no more extra method signatures.
      * @private
      */
     _removeExtraMethodSigBelow(codeArray) {
@@ -470,7 +470,7 @@ export default class AFormatter {
      * Removes empty lines at beginning of snippet.
      *
      * @param codeArray Array of lines of code.
-     * @returns {*} Code array with no empty lines at beginning.
+     * @returns {Array} Code array with no empty lines at beginning.
      * @private
      */
     _trimBeginning(codeArray) {
@@ -492,7 +492,7 @@ export default class AFormatter {
      * Removes empty lines at end of snippet.
      *
      * @param codeArray Array of lines of code.
-     * @returns {*} Code array with no empty lines at end.
+     * @returns {Array} Code array with no empty lines at end.
      * @private
      */
     _trimEnd(codeArray) {
