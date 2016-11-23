@@ -65,9 +65,9 @@ var indentToken = "   ";
 var javaFormatter = Formatter.createJavaFormatter(indentToken);
 
 var unformattedCode = "code to format";
-var selectionStartRow = 1;
-var selectionEndRow = 1;
-var snippetOffset = 0;
+var selectionStartRow = 11;
+var selectionEndRow = 11;
+var snippetOffset = 6;
 
 var formattedCode = javaFormatter.formatSnippet(unformattedCode, selectionStartRow, 
     selectionEndRow, snippetOffset);
