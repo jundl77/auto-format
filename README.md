@@ -11,6 +11,9 @@ Please see [contribute](#contribute) if you would like to contribute. Help is al
 
 ## Examples
 
+Detailed examples comming soon! For now you can check out https://exemplator.xyz where all code is being formatted 
+with this library.
+
 ## Install
 
 Run ` npm install auto-format --save`
