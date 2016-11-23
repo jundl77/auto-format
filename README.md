@@ -4,14 +4,14 @@
 [![npm](http://img.shields.io/npm/v/auto-format.svg?style=flat)](https://www.npmjs.com/package/auto-format)
 [![Document](https://doc.esdoc.org/github.com/jundl77/auto-format/badge.svg)](https://doc.esdoc.org/github.com/jundl77/auto-format/)
 
-An easy to use and light-weight library to auto-format code in javascript. Works well with code highlighting libraries to display beautiful, uniformly formatted code. 
+An easy to use, light-weight library to auto-format code in javascript. Works well with code highlighting libraries to display beautiful, uniformly formatted code. 
 
-As of right now, only Java can be formatted. However the library is very extensible, in fact you only have to write 3 methods, so it is easy to add support for more languages.
+As of right now only Java can be formatted. However the library is very extensible, in fact you only have to write 3 methods, so it is easy to add support for more languages.
 Please see [contribute](#contribute) if you would like to contribute. Help is always appreciated!
 
 ## Examples
 
-Detailed examples comming soon! For now you can check out https://exemplator.xyz where all code is being formatted 
+Detailed examples comming soon! For now check out https://exemplator.xyz where all code is being formatted 
 with this library.
 
 ## Install
