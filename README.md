@@ -39,6 +39,7 @@ var Formatter = require('auto-format');
 
 ```js
 var indentToken = "   ";
+var unformattedCode = "code to format";
 var javaFormatter = Formatter.createJavaFormatter(indentToken);
 var formattedCode = javaFormatter.format(unformattedCode);
 ```
