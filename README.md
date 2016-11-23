@@ -114,3 +114,8 @@ Snippet end row: 11 + 6 = 17
 For more details and examples see the [documentation](https://doc.esdoc.org/github.com/jundl77/auto-format/).
 
 ## Contribute
+
+Pull requests are always welcome. To add support for a new language, look at the [JavaFormatter](./src/formatters/javaFormatter.js).
+
+The documentation is [here](https://doc.esdoc.org/github.com/jundl77/auto-format/).
+
