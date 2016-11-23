@@ -25,7 +25,7 @@ var Formatter = require('auto-format');
 ```
 ***
 
-#### format (simple):
+#### Simple example: *format*
 
 ```js
 var indentToken = "   ";
@@ -43,7 +43,7 @@ var formattedCode = javaFormatter.format(unformattedCode);
 
 ***
 
-#### formatSnippet (complex):
+#### Complex example: *formatSnippet*
 
 ```js
 var indentToken = "   ";
@@ -55,5 +55,19 @@ var snippetOffset = 5;
 var formattedCode = javaFormatter.formatSnippet(unformattedCode, selectionStartRow, 
     selectionEndRow, snippetOffset);
 ```
+
+#####-- Parameters:
+`indentToken` :
+
+`unformattedCode` :
+
+`selectionStartRow` :
+
+`selectionEndRow` :
+
+`snippetOffset` :
+
+#####-- Return:
+`formattedCode` :
 
 ## Contribute
