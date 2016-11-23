@@ -73,18 +73,44 @@ var formattedCode = javaFormatter.formatSnippet(unformattedCode, selectionStartR
     selectionEndRow, snippetOffset);
 ```
 
+A slight variation of format(codeString). Useful if you want to display a code snippet around a selection of lines like
+[here](https://exemplator.xyz).
+
+In addition to indenting lines, formatSnippet takes a selection and an offset. 
+
+The selection consists of one or two lines which should be "highlighted" in the code. For example the method that you would like to show off. The offset defines the number of lines above and below the selection.
+
+From them the start and end of the snippet is calculated, and the method intelligently cuts out the snippet out of the original codebase. 'Intelligently' means the method
+always tries to return the method and only the method of the selection. If the method is too big, only a part of the method will be shown, but outside this method (i.e. other methods etc.) are cut away.
+
 ##### -- Parameters:
 `indentToken` : The token used to indent lines (e.g. 2 or 4 spaces).
 
 `unformattedCode` : A string of unformatted code (including line breaks).
 
-`selectionStartRow` :
+`selectionStartRow` : The start row of the selection in the code base.
 
-`selectionEndRow` :
+`selectionEndRow` : The end row of the selection in the code base.
 
 `snippetOffset` :
 
+##### -- Example:
+```
+Selection start row: 11
+Selection end row: 11
+Offset: 6 
+------------------------------
+Snippet start row: 11 - 6 = 5
+Snippet end row: 11 + 6 = 17
+```
+
 ##### -- Return:
-`formattedCode` :
+`formattedCode` : An array in the form of
+```
+[code array above selection, code array of selection, code array below selection,
+[new start line of snippet in original file, new end line of snippet in original file]]
+```
+
+For more details and examples, see the [documentation](https://doc.esdoc.org/github.com/jundl77/auto-format/).
 
 ## Contribute
