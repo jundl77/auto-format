@@ -1,9 +1,0 @@
-# Project files and folders
-src
-docs
-
-# IDE files and folders
-.idea
-
-# Other
-*.log
