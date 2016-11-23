@@ -11,7 +11,7 @@ Please see [contribute](#contribute) if you would like to contribute. Help is al
 
 ## Examples
 
-Detailed examples comming soon! For now check out https://exemplator.xyz where all code is being formatted 
+Detailed examples comming soon! For now check out https://exemplator.xyz where all code samples are formatted
 with this library.
 
 [Live example](https://runkit.com/jundl77/auto-format.format) of *format* method.
