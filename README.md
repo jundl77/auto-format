@@ -14,7 +14,7 @@ Please see [contribute](#contribute) if you would like to contribute. Help is al
 Detailed examples comming soon! For now check out https://exemplator.xyz where all code is being formatted 
 with this library.
 
-Live example for [*format*](https://runkit.com/jundl77/auto-format.format)
+Live example for [*format*](https://runkit.com/jundl77/auto-format.format) method.
 
 ## Install
 
