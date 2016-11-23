@@ -92,7 +92,7 @@ always tries to return the method and only the method of the selection. If the m
 
 `selectionEndRow` : The end row of the selection in the code base.
 
-`snippetOffset` :
+`snippetOffset` : The number of lines above and below the selection.
 
 ##### -- Example:
 ```
