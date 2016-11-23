@@ -43,12 +43,12 @@ var formattedCode = javaFormatter.format(unformattedCode);
 Format a string of code. The string will be cut into lines and lines will 
 be indented accordingly to their scope.
 
-#####-- Parameters:
+##### -- Parameters:
 `indentToken` : The token used to indent lines (e.g. 2 or 4 spaces).
 
 `unformattedCode` : A string of unformatted code (including line breaks).
 
-#####-- Return:
+##### -- Return:
 `formattedCode` : A string of formatted code. All lines will have been correctly
                   indented according to their scope.
                   
@@ -67,7 +67,7 @@ var formattedCode = javaFormatter.formatSnippet(unformattedCode, selectionStartR
     selectionEndRow, snippetOffset);
 ```
 
-#####-- Parameters:
+##### -- Parameters:
 `indentToken` :
 
 `unformattedCode` :
@@ -78,7 +78,7 @@ var formattedCode = javaFormatter.formatSnippet(unformattedCode, selectionStartR
 
 `snippetOffset` :
 
-#####-- Return:
+##### -- Return:
 `formattedCode` :
 
 ## Contribute
