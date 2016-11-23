@@ -111,6 +111,6 @@ Snippet end row: 11 + 6 = 17
 [new start line of snippet in original file, new end line of snippet in original file]]
 ```
 
-For more details and examples, see the [documentation](https://doc.esdoc.org/github.com/jundl77/auto-format/).
+For more details and examples see the [documentation](https://doc.esdoc.org/github.com/jundl77/auto-format/).
 
 ## Contribute
