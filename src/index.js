@@ -19,13 +19,6 @@ const Formatter = {
      */
     createJavaFormatter(formatUnit) {
         return new JavaFormatter(formatUnit)
-    },
-
-    /**
-     * Tests if the module is working correctly by printing out a string.
-     */
-    testModule() {
-        console.log("I am working")
     }
 }
 
