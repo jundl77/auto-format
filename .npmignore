@@ -2,6 +2,7 @@
 src
 test
 docs
+coverage
 
 # IDE files and folders
 .idea
