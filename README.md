@@ -109,7 +109,7 @@ Snippet end row: 11 + 6 = 17
 ##### -- Return:
 `formattedCode` : An array in the form of
 ```
-[code array above selection, code array of selection, code array below selection,
+[code string above selection, code string of selection, code string below selection,
 [new start line of snippet in original file, new end line of snippet in original file]]
 ```
 
