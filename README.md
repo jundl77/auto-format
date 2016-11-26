@@ -11,10 +11,10 @@ As of right now only Java can be formatted properly, although you will probably 
 Please see [contribute](#contribute) if you would like to contribute. Help is always welcome!
 
 ## Examples
-
+*Format* method:
 ![](https://raw.githubusercontent.com/jundl77/auto-format/readme/images/af-format.gif)
 
-Fixing the quality soon! For now check out https://exemplator.xyz where all code samples are formatted
+You can also check out https://exemplator.xyz where all code samples are formatted
 with this library.
 
 [Live example](https://runkit.com/jundl77/auto-format.format) of *format* method.
