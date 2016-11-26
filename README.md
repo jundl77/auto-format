@@ -12,7 +12,7 @@ Please see [contribute](#contribute) if you would like to contribute. Help is al
 
 ## Examples
 
-![](https://raw.githubusercontent.com/jundl77/auto-format/readme/images/auto-format.gif)
+![](https://raw.githubusercontent.com/jundl77/auto-format/readme/images/af-format.gif)
 
 Fixing the quality soon! For now check out https://exemplator.xyz where all code samples are formatted
 with this library.
