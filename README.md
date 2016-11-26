@@ -11,7 +11,7 @@ As of right now only Java can be formatted properly, although you will probably 
 Please see [contribute](#contribute) if you would like to contribute. Help is always welcome!
 
 ## Examples
-*Format* method:
+*format* method:
 ![](https://raw.githubusercontent.com/jundl77/auto-format/readme/images/af-format.gif)
 
 You can also check out https://exemplator.xyz where all code samples are formatted
