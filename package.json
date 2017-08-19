@@ -42,7 +42,6 @@
     "mocha": "^3.1.2",
     "mocha-lcov-reporter": "^1.2.0",
     "npm-run-all": "^3.1.1",
-    "rimraf": "^2.6.1",
     "webpack": "^1.13.3"
   },
   "scripts": {
@@ -54,7 +53,6 @@
     "build": "webpack -p",
     "generate-docs": "esdoc -c esdoc.json",
     "deploy-docs": "gh-pages-deploy",
-    "clean-source": "rimraf README.md src webroot package.json",
     "prepublish": "npm-run-all build test"
   },
   "gh-pages-deploy": {

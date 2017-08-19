@@ -1,0 +1,2785 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/core/formatter.js",
+    "content": "import ScopeNode from \"./scopeTree\";\n\n/**\n * This is the core formatter. It contains most of the logic behind the formatting,\n * and it is written in such a way that it is easily extendable to other programming\n * languages. To create a formatter for a new programming language, extend this class\n * and follow the JavaFormatter as an example.\n */\nexport default class AFormatter {\n\n  /**\n   * Create a new AFormatter (abstract formatter).\n   *\n   * @constructor\n   * @param formatUnit The token to be used for line indentations.\n   */\n  constructor(formatUnit) {\n    /**\n     * @private\n     */\n    this.formatUnit = formatUnit\n\n    /**\n     * @private\n     */\n    this.fullCodeArray = ''\n\n    /**\n     * @private\n     */\n    this.startSelection = 0\n\n    /**\n     * @private\n     */\n    this.endSelection = 0\n\n    /**\n     * @private\n     */\n    this.snippetOffset = 0\n\n    /**\n     * @private\n     */\n    this.bodyCommentToken = ''\n\n    /**\n     * @private\n     */\n    this.simpleCommentToken = ''\n\n    /**\n     * @private\n     */\n    this.expressionIdentifier = null\n\n    /**\n     * @private\n     */\n    this.scopeEnterFunc = null\n\n    /**\n     * @private\n     */\n    this.scopeExitFunc = null\n\n    /**\n     * @private\n     */\n    this.identifyMethodSigFunc = null\n\n    /**\n     * @private\n     */\n    this.identifySpecialStatement = null\n  }\n\n  /**\n   * Format a string of code. The string will be cut into lines and lines\n   * will be indented accordingly to their scope.\n   *\n   * As a reference, look at the format function in the JavaFormatter.\n   *\n   * @param code String of code to format.\n   * @param expressionIdentifier Function that identifies if a line qualifies as an expression:\n   * - A line that ends with a termination token (e.g. ';')\n   * - A line that defines a scope start (e.g. '\\{')\n     * - A line that defines a scope end (e.g. '\\}')\n   * - A line that starts with a special character (e.g. '@')\n   * - A line that starts with a comment (e.g. '//')\n   * - An empty line (e.g. '')\n   * @param scopeEnterFunc Function that identifies if a new scope is entered in a line.\n   * @param scopeExitFunc Function that identifies if a scope is exited in a line.\n   * @returns {Array} An array of formatted lines.\n   */\n  format(code, expressionIdentifier, scopeEnterFunc, scopeExitFunc) {\n    return this.formatSnippet(code, null, null, null, expressionIdentifier, scopeEnterFunc,\n      scopeExitFunc, null, null, null, null)\n  }\n\n  /**\n   * A slight variation of format(codeString). Useful if you want to display\n   * a code snippet around a selection of lines.\n   *\n   * As a reference, look at the formatSnippet function in the JavaFormatter.\n   *\n   * In addition to indenting lines, formatSnippet takes a selection as a\n   * start and end row in a large slab of code and cuts out a snippet of\n   * code around this selection. The start and end of the snippet is based\n   * on an offset that is provided as a parameter. The offset with the start\n   * and end of the selection create a sort of range from which the snippet\n   * is taken.\n   *\n   * In the example below, the selection is identified to belong to test2()\n   * and thus only test2() is returned. If the method is longer than the\n   * offset, than only the part within the offset will be returned. No code\n   * is added to the range with the exception of comment lines above the\n   * selection, to close unfinished comments.\n   *\n   * @example\n   * <caption>Selection start row: 11 ---- Selection end row: 11 ---- Offset: 6 ----> Snippet range: [11 - 6, 11 + 6] = [5, 17]</caption>\n   *\n   * START:\n   * 1.  @Test\n   * 2.  public void test1() {\n     * 3.      System.out.println(\"Test 1\");\n     * 4.  }\n   * 5.\n   * 6.  // ------------------\n   * 7.  // Perform test 2.\n   * 8.  // ------------------\n   * 9. @Test\n   * 10. public void test2() {\n     * 11.     System.out.println(\"Test 2\");\n     * 12. }\n   * 13.\n   * 14. @Test\n   * 15. public void test3() {\n     * 16.     System.out.println(\"Test 3\");\n     * 17. }\n   * 18. ...\n   *\n   * RESULT:\n   * 6.  // ------------------\n   * 7.  // Perform test 2.\n   * 8.  // ------------------\n   * 9. @Test\n   * 10. public void test2() {\n     * 11.     System.out.println(\"Test 1\");\n     * 12. }\n   *\n   * @param code The original code base in which the selection is.\n   * @param startRow The start row of the selection in the code base.\n   * @param endRow The end row of the selection in the code base.\n   * @param offset The offset the defines the range on which to base the\n   *               snippet.\n   * @param expressionIdentifier Function that identifies if a line qualifies as an expression:\n   * An expression is defined as:\n   * - A line that ends with a termination token (e.g. ';')\n   * - A line that defines a scope start (e.g. '\\{')\n     * - A line that defines a scope end (e.g. '\\}')\n   * - A line that starts with a special character (e.g. '@')\n   * - A line that starts with a comment (e.g. '//')\n   * - An empty line (e.g. '')\n   * @param scopeEnterFunc Function that identifies if a new scope is entered in a line.\n   * @param scopeExitFunc Function that identifies if a scope is exited in a line.\n   * @param identifyMethodSigFunc Function that identifies if a line is a method signature.\n   * @param identifySpecialStatement Function that identifies if a line contains a special\n   *                                 statement (e.g. comment or '@' in Java)\n   * @param bodyCommentToken The token for 'body comments' (e.g. '*' in Java)\n   * @param simpleCommentToken Simple comment token (e.g. '//')\n   * @returns {Array} An array of formatted lines that form the snippet, separated\n   *              into prefix selection and suffix, as well as the start and\n   *              end lines of the snippet in the original code base.\n   */\n  formatSnippet(code, startRow, endRow, offset, expressionIdentifier, scopeEnterFunc,\n                scopeExitFunc, identifyMethodSigFunc, identifySpecialStatement,\n                bodyCommentToken, simpleCommentToken) {\n    // Initialize\n    this.fullCodeArray = code.split('\\n')\n    this.startSelection = startRow\n    this.endSelection = endRow\n    this.snippetOffset = offset\n    this.expressionIdentifier = expressionIdentifier\n    this.scopeEnterFunc = scopeEnterFunc\n    this.scopeExitFunc = scopeExitFunc\n    this.identifyMethodSigFunc = identifyMethodSigFunc\n    this.identifySpecialStatement = identifySpecialStatement\n    this.bodyCommentToken = bodyCommentToken\n    this.simpleCommentToken = simpleCommentToken\n\n    let codeArray = this.fullCodeArray\n\n    // In case we have a snippet, find the snippet\n    let snippetPresent = this.startSelection !== null && this.endSelection !== null\n      && offset !== null && this.startSelection !== -1 && this.endSelection !== -1\n      && offset !== -1\n\n    let snippet = []\n    if (snippetPresent) {\n      snippet = [this.fullCodeArray.slice(this.startSelection - 1, this.endSelection),\n        this.fullCodeArray.slice(this.startSelection - offset - 1,\n          this.endSelection + offset)]\n      codeArray = this._preFormatSnippet(snippet[1], snippet[0])\n    }\n\n    // Build and balance the scope tree\n    codeArray = codeArray.map(line => line.trim())\n    let scopeTree = new ScopeNode(null, null)\n\n    // copy array because it is consumed\n    scopeTree.build(codeArray.slice(), 0, this.scopeEnterFunc, this.scopeExitFunc)\n    scopeTree.balance()\n\n    // Init formatted array\n    let formattedArray = []\n    for (let i = 0; i < codeArray.length; i++) {\n      formattedArray[i] = \"\"\n    }\n    this._preFormatArray(formattedArray, scopeTree)\n\n    // Fill formatted array with code\n    for (let i = 0; i < codeArray.length; i++) {\n      formattedArray[i] += codeArray[i]\n    }\n\n    // Add spaces after lines that do not qualify as an expression (e.g. let str = \"hello\" +)\n    for (let i = 0; i < formattedArray.length; i++) {\n      if (!this.expressionIdentifier(formattedArray, i) && formattedArray.length > i + 1) {\n        if (this.scopeEnterFunc(formattedArray, i + 1) === null\n          && this.scopeExitFunc(formattedArray, i + 1) === null) {\n          formattedArray[i + 1] = this.formatUnit + formattedArray[i + 1]\n        }\n      }\n    }\n\n    // If we don't have a snippet, return the result now\n    if (!snippetPresent) {\n      formattedArray = this._trimBeginning(formattedArray)\n      return this._trimEnd(formattedArray)\n    }\n\n    // Format prefix and suffix\n    let selection = this._splitSelection(formattedArray, snippet[0])\n    let prefixResult = this._formatPrefix(scopeTree, selection[0],\n      this.startSelection - selection[0].length)\n    let suffixResult = this._formatSuffix(selection[2],\n      this.endSelection + selection[2].length)\n    let range = [prefixResult[1], suffixResult[1]]\n\n    // Turn array into string\n    let selectionString = \"\"\n    if (selection[1].length > 0) {\n      selectionString = selection[1].reduce(((acc, line) => acc + '\\n' + line))\n    }\n\n    return [prefixResult[0], selectionString, suffixResult[0], range]\n  }\n\n  /**\n   * Performs the following preliminary tasks:\n   *  - Fills open comments\n   *  - Removes extra method signatures (===> scope break so it will be removed later)\n   *\n   * @param snippet The snippet, as an array of lines, to work on.\n   * @param selection The selection, as an array of lines, within the snippet.\n   * @returns {Array} Array of pre-formatted lines.\n   * @private\n   */\n  _preFormatSnippet(snippet, selection) {\n    let splitSnippet = this._splitSelection(snippet, selection)\n    let prefixArray = this._handleOpenComments(splitSnippet[0],\n      this.startSelection - this.snippetOffset - 1)\n    prefixArray = this._removeExtraMethodSigAbove(prefixArray)\n    let suffixArray = this._removeExtraMethodSigBelow(splitSnippet[2])\n    return prefixArray.concat(splitSnippet[1].concat(suffixArray))\n  }\n\n  /**\n   * Format the prefix of a snippet. The prefix is defines as all lines above the\n   * selection. Performs the following tasks:\n   *  - Removes scopes that close but never open.\n   *  - Removes empty lines at beginning of snippet.\n   *\n   * @param scopeTree The scope tree of the snippet.\n   * @param array The formatted snippet as an array of lines.\n   * @param oldStart The old start of the snippet in the original file\n   *                 (line number, starting with 1 not 0).\n   * @returns {Array} Formatted prefix string with the new beginning of the snippet\n   *                in the original file (again index starting with 1).\n   * @private\n   */\n  _formatPrefix(scopeTree, array, oldStart) {\n    let originalLength = array.length\n\n    let limit = scopeTree.getChildren()\n      .filter(node => node.getStart() === null && node.getEnd() !== null)\n      .filter(node => node.getEnd() < array.length)\n      .reduce((limit, current) => Math.max(limit, current.getEnd()), -1)\n\n    let result = []\n    for (let i = limit + 1; i < array.length; i++) {\n      result.push(array[i])\n    }\n\n    result = this._trimBeginning(result)\n    let offset = originalLength - result.length\n\n    if (result.length > 0) {\n      result = result.reduce((acc, line) => acc + '\\n' + line)\n    } else {\n      result = \"\"\n    }\n\n    return [result, oldStart + offset]\n  }\n\n  /**\n   * Format the suffix of a snippet. The suffix is defines as all lines below the\n   * selection. Performs the following tasks:\n   *  - Removes methods and comments belonging to method below selection.\n   *  - Removes empty lines at end of snippet.\n   *\n   * @param codeArray The formatted suffix as an array of lines.\n   * @param oldEnd The old end of the snippet in the original file\n   *               (line number, starting with 1 not 0).\n   * @returns {Array} Formatted suffix string with the new end of the snippet\n   *                in the original file (again index starting with 1).\n   * @private\n   */\n  _formatSuffix(codeArray, oldEnd) {\n    if (codeArray.length === 0) {\n      return codeArray\n    }\n\n    let originalLength = codeArray.length\n    let codeFound = false\n    let index = codeArray.length - 1\n    while (index >= 0) {\n      let line = codeArray[index].trim()\n      if (this.identifySpecialStatement(line) && line !== ''\n        && (!line.trim().startsWith(this.simpleCommentToken.trim()) || !codeFound)) {\n        codeArray.splice(index, 1)\n      } else if (line !== '') {\n        codeFound = true\n      }\n\n      index--\n    }\n\n    codeArray = this._trimEnd(codeArray)\n    let offset = originalLength - codeArray.length\n\n    return [codeArray.reduce(((acc, line) => acc + '\\n' + line)), oldEnd - offset]\n  }\n\n  /**\n   * Pre-formats an empty array by adding the indentations\n   * (the specified format unit).\n   *\n   * @param array Array of lines of code.\n   * @param node Node of the scope tree.\n   * @private\n   */\n  _preFormatArray(array, node) {\n    let start = node.getStart()\n    let end = node.getEnd()\n\n    if (start !== null && end !== null) {\n      this._fillBucketRange(array, start + 1, end - 1)\n    } else if (start === null && end !== null) {\n      this._fillBucketRange(array, 0, end - 1)\n    } else if (start !== null && end === null) {\n      this._fillBucketRange(array, start + 1, array.length - 1)\n    }\n\n    node.getChildren().forEach(child => this._preFormatArray(array, child))\n  }\n\n  /**\n   * Adds indentations to the array from the start to the end index, inclusive.\n   *\n   * @param array Array of lines of code.\n   * @param start Start index of where to add indentations.\n   * @param end End index of where to stop adding indentations.\n   * @private\n   */\n  _fillBucketRange(array, start, end) {\n    for (let i = start; i <= end; i++) {\n      array[i] += this.formatUnit\n    }\n  }\n\n  /**\n   * If an open comment is met, take all lines necessary to close it\n   * from the original file and append them to the snippet.\n   *\n   * @param codeArray Array of lines of code.\n   * @param startLine The start line of the snippet in the original file.\n   * @returns {Array} A snippet as an array of lines of code with no more\n   *              open comments.\n   * @private\n   */\n  _handleOpenComments(codeArray, startLine) {\n    if (codeArray.length > 0 && startLine - 1 < this.fullCodeArray.length\n      && codeArray[0].trim().startsWith(this.bodyCommentToken)) {\n      codeArray.unshift(this.fullCodeArray[startLine - 1])\n      return this._handleOpenComments(codeArray, startLine - 1)\n    } else {\n      return codeArray\n    }\n  }\n\n  /**\n   * Remove method signatures in the prefix that do not belong to the selection.\n   *\n   * @param codeArray Array of lines of code (prefix).\n   * @returns {Array} Prefix with no more extra method signatures.\n   * @private\n   */\n  _removeExtraMethodSigAbove(codeArray) {\n    if (codeArray.length === 0) {\n      return codeArray\n    }\n\n    let methodSigCount = 0\n    let index = codeArray.length - 1\n    while (index >= 0) {\n      let line = codeArray[index].trim()\n      if (this.identifyMethodSigFunc(line) && methodSigCount === 0) {\n        methodSigCount++\n      } else if (this.identifyMethodSigFunc(line) && methodSigCount === 1) {\n        codeArray.splice(index, 1)\n        methodSigCount++\n      } else if (this.scopeEnterFunc([line], 0) !== null && index - 1 > 0\n        && methodSigCount === 1) {\n        if (this.identifyMethodSigFunc(codeArray[index - 1])) {\n          codeArray.splice(index, 1)\n          methodSigCount++\n        }\n      } else if (methodSigCount > 1) {\n        codeArray.splice(index, 1)\n      }\n\n      index--\n    }\n\n    if (this.scopeEnterFunc([codeArray[0].trim()], 0) === 0) {\n      codeArray.shift()\n    }\n\n    return codeArray\n  }\n\n  /**\n   * Remove method signatures in the suffix that do not belong to the selection.\n   *\n   * @param codeArray Array of lines of code (suffix).\n   * @returns {Array} Suffix with no more extra method signatures.\n   * @private\n   */\n  _removeExtraMethodSigBelow(codeArray) {\n    let index = 0\n    let found = false\n    while (index < codeArray.length) {\n      let line = codeArray[index].trim()\n      if (this.identifyMethodSigFunc(line) || found) {\n        codeArray.splice(index, 1)\n        found = true\n      } else {\n        index++\n      }\n    }\n\n    return codeArray\n  }\n\n  /**\n   * Removes empty lines at beginning of snippet.\n   *\n   * @param codeArray Array of lines of code.\n   * @returns {Array} Code array with no empty lines at beginning.\n   * @private\n   */\n  _trimBeginning(codeArray) {\n    let canTrim = true\n\n    while (canTrim && codeArray.length > 0) {\n      let line = codeArray[0]\n      if (line === \"\\n\" || line.trim() === \"\") {\n        codeArray.shift();\n      } else {\n        canTrim = false\n      }\n    }\n\n    return codeArray\n  }\n\n  /**\n   * Removes empty lines at end of snippet.\n   *\n   * @param codeArray Array of lines of code.\n   * @returns {Array} Code array with no empty lines at end.\n   * @private\n   */\n  _trimEnd(codeArray) {\n    let canTrim = true\n\n    while (canTrim && codeArray.length > 0) {\n      let line = codeArray[codeArray.length - 1]\n      if (line === \"\\n\" || line.trim() === \"\") {\n        codeArray.pop()\n      } else {\n        canTrim = false\n      }\n    }\n\n    return codeArray\n  }\n\n  /**\n   * Splits the code array into three parts: prefix, selection, suffix.\n   *\n   * Prefix: All lines above the selection.\n   * Suffix: All lines below the selection.\n   *\n   * @param codeArray Array of lines of code.\n   * @param selection Selection to split codeArray on.\n   * @returns {Array} An array containing again the prefix, selection and suffix as\n   *                arrays of lines of code.\n   * @private\n   */\n  _splitSelection(codeArray, selection) {\n    let startArray = []\n    let selectionArray = []\n    let endArray = []\n    let selectionFound = false\n    let selectionDone = false\n\n    codeArray.forEach(line => {\n      if (selection.length !== 0) {\n        if (!selectionDone && selection.reduce((result, sLine) => result\n            || line.includes(sLine.trim()), false)) {\n          selectionFound = true\n          selectionArray.push(line)\n        } else if (selectionFound) {\n          endArray.push(line)\n          selectionDone = true\n        } else {\n          startArray.push(line)\n        }\n      }\n    })\n\n    return [startArray, selectionArray, endArray];\n  }\n}",
+    "static": true,
+    "longname": "/Users/julianbrendl/Projects/auto-format/src/core/formatter.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "class",
+    "name": "AFormatter",
+    "memberof": "src/core/formatter.js",
+    "static": true,
+    "longname": "src/core/formatter.js~AFormatter",
+    "access": "public",
+    "export": true,
+    "importPath": "auto-format/src/core/formatter.js",
+    "importStyle": "AFormatter",
+    "description": "This is the core formatter. It contains most of the logic behind the formatting,\nand it is written in such a way that it is easily extendable to other programming\nlanguages. To create a formatter for a new programming language, extend this class\nand follow the JavaFormatter as an example.",
+    "lineNumber": 9,
+    "interface": false
+  },
+  {
+    "__docId__": 50,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/core/formatter.js~AFormatter",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core/formatter.js~AFormatter#constructor",
+    "access": "public",
+    "description": "Create a new AFormatter (abstract formatter).",
+    "lineNumber": 17,
+    "unknown": [
+      {
+        "tagName": "@constructor",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "formatUnit",
+        "description": "The token to be used for line indentations."
+      }
+    ]
+  },
+  {
+    "__docId__": 51,
+    "kind": "member",
+    "name": "formatUnit",
+    "memberof": "src/core/formatter.js~AFormatter",
+    "static": false,
+    "longname": "src/core/formatter.js~AFormatter#formatUnit",
+    "access": "private",
+    "description": "",
+    "lineNumber": 21,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 52,
+    "kind": "member",
+    "name": "fullCodeArray",
+    "memberof": "src/core/formatter.js~AFormatter",
+    "static": false,
+    "longname": "src/core/formatter.js~AFormatter#fullCodeArray",
+    "access": "private",
+    "description": "",
+    "lineNumber": 26,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 53,
+    "kind": "member",
+    "name": "startSelection",
+    "memberof": "src/core/formatter.js~AFormatter",
+    "static": false,
+    "longname": "src/core/formatter.js~AFormatter#startSelection",
+    "access": "private",
+    "description": "",
+    "lineNumber": 31,
+    "type": {
+      "types": [
+        "number"
+      ]
+    }
+  },
+  {
+    "__docId__": 54,
+    "kind": "member",
+    "name": "endSelection",
+    "memberof": "src/core/formatter.js~AFormatter",
+    "static": false,
+    "longname": "src/core/formatter.js~AFormatter#endSelection",
+    "access": "private",
+    "description": "",
+    "lineNumber": 36,
+    "type": {
+      "types": [
+        "number"
+      ]
+    }
+  },
+  {
+    "__docId__": 55,
+    "kind": "member",
+    "name": "snippetOffset",
+    "memberof": "src/core/formatter.js~AFormatter",
+    "static": false,
+    "longname": "src/core/formatter.js~AFormatter#snippetOffset",
+    "access": "private",
+    "description": "",
+    "lineNumber": 41,
+    "type": {
+      "types": [
+        "number"
+      ]
+    }
+  },
+  {
+    "__docId__": 56,
+    "kind": "member",
+    "name": "bodyCommentToken",
+    "memberof": "src/core/formatter.js~AFormatter",
+    "static": false,
+    "longname": "src/core/formatter.js~AFormatter#bodyCommentToken",
+    "access": "private",
+    "description": "",
+    "lineNumber": 46,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 57,
+    "kind": "member",
+    "name": "simpleCommentToken",
+    "memberof": "src/core/formatter.js~AFormatter",
+    "static": false,
+    "longname": "src/core/formatter.js~AFormatter#simpleCommentToken",
+    "access": "private",
+    "description": "",
+    "lineNumber": 51,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 58,
+    "kind": "member",
+    "name": "expressionIdentifier",
+    "memberof": "src/core/formatter.js~AFormatter",
+    "static": false,
+    "longname": "src/core/formatter.js~AFormatter#expressionIdentifier",
+    "access": "private",
+    "description": "",
+    "lineNumber": 56,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 59,
+    "kind": "member",
+    "name": "scopeEnterFunc",
+    "memberof": "src/core/formatter.js~AFormatter",
+    "static": false,
+    "longname": "src/core/formatter.js~AFormatter#scopeEnterFunc",
+    "access": "private",
+    "description": "",
+    "lineNumber": 61,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 60,
+    "kind": "member",
+    "name": "scopeExitFunc",
+    "memberof": "src/core/formatter.js~AFormatter",
+    "static": false,
+    "longname": "src/core/formatter.js~AFormatter#scopeExitFunc",
+    "access": "private",
+    "description": "",
+    "lineNumber": 66,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 61,
+    "kind": "member",
+    "name": "identifyMethodSigFunc",
+    "memberof": "src/core/formatter.js~AFormatter",
+    "static": false,
+    "longname": "src/core/formatter.js~AFormatter#identifyMethodSigFunc",
+    "access": "private",
+    "description": "",
+    "lineNumber": 71,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 62,
+    "kind": "member",
+    "name": "identifySpecialStatement",
+    "memberof": "src/core/formatter.js~AFormatter",
+    "static": false,
+    "longname": "src/core/formatter.js~AFormatter#identifySpecialStatement",
+    "access": "private",
+    "description": "",
+    "lineNumber": 76,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 63,
+    "kind": "method",
+    "name": "format",
+    "memberof": "src/core/formatter.js~AFormatter",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core/formatter.js~AFormatter#format",
+    "access": "public",
+    "description": "Format a string of code. The string will be cut into lines and lines\nwill be indented accordingly to their scope.\n\nAs a reference, look at the format function in the JavaFormatter.",
+    "lineNumber": 97,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} An array of formatted lines."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "code",
+        "description": "String of code to format."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "expressionIdentifier",
+        "description": "Function that identifies if a line qualifies as an expression:\n- A line that ends with a termination token (e.g. ';')\n- A line that defines a scope start (e.g. '\\{')\n- A line that defines a scope end (e.g. '\\}')\n- A line that starts with a special character (e.g. '@')\n- A line that starts with a comment (e.g. '//')\n- An empty line (e.g. '')"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "scopeEnterFunc",
+        "description": "Function that identifies if a new scope is entered in a line."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "scopeExitFunc",
+        "description": "Function that identifies if a scope is exited in a line."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "An array of formatted lines."
+    }
+  },
+  {
+    "__docId__": 64,
+    "kind": "method",
+    "name": "formatSnippet",
+    "memberof": "src/core/formatter.js~AFormatter",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core/formatter.js~AFormatter#formatSnippet",
+    "access": "public",
+    "description": "A slight variation of format(codeString). Useful if you want to display\na code snippet around a selection of lines.\n\nAs a reference, look at the formatSnippet function in the JavaFormatter.\n\nIn addition to indenting lines, formatSnippet takes a selection as a\nstart and end row in a large slab of code and cuts out a snippet of\ncode around this selection. The start and end of the snippet is based\non an offset that is provided as a parameter. The offset with the start\nand end of the selection create a sort of range from which the snippet\nis taken.\n\nIn the example below, the selection is identified to belong to test2()\nand thus only test2() is returned. If the method is longer than the\noffset, than only the part within the offset will be returned. No code\nis added to the range with the exception of comment lines above the\nselection, to close unfinished comments.",
+    "examples": [
+      "<caption>Selection start row: 11 ---- Selection end row: 11 ---- Offset: 6 ----> Snippet range: [11 - 6, 11 + 6] = [5, 17]</caption>\n\nSTART:\n1.  @Test\n2.  public void test1() {\n3.      System.out.println(\"Test 1\");\n4.  }\n5.\n6.  // ------------------\n7.  // Perform test 2.\n8.  // ------------------\n9. @Test\n10. public void test2() {\n11.     System.out.println(\"Test 2\");\n12. }\n13.\n14. @Test\n15. public void test3() {\n16.     System.out.println(\"Test 3\");\n17. }\n18. ...\n\nRESULT:\n6.  // ------------------\n7.  // Perform test 2.\n8.  // ------------------\n9. @Test\n10. public void test2() {\n11.     System.out.println(\"Test 1\");\n12. }"
+    ],
+    "lineNumber": 177,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} An array of formatted lines that form the snippet, separated\n             into prefix selection and suffix, as well as the start and\n             end lines of the snippet in the original code base."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "code",
+        "description": "The original code base in which the selection is."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "startRow",
+        "description": "The start row of the selection in the code base."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "endRow",
+        "description": "The end row of the selection in the code base."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "offset",
+        "description": "The offset the defines the range on which to base the\n              snippet."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "expressionIdentifier",
+        "description": "Function that identifies if a line qualifies as an expression:\nAn expression is defined as:\n- A line that ends with a termination token (e.g. ';')\n- A line that defines a scope start (e.g. '\\{')\n- A line that defines a scope end (e.g. '\\}')\n- A line that starts with a special character (e.g. '@')\n- A line that starts with a comment (e.g. '//')\n- An empty line (e.g. '')"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "scopeEnterFunc",
+        "description": "Function that identifies if a new scope is entered in a line."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "scopeExitFunc",
+        "description": "Function that identifies if a scope is exited in a line."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "identifyMethodSigFunc",
+        "description": "Function that identifies if a line is a method signature."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "identifySpecialStatement",
+        "description": "Function that identifies if a line contains a special\n                                statement (e.g. comment or '@' in Java)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "bodyCommentToken",
+        "description": "The token for 'body comments' (e.g. '*' in Java)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "simpleCommentToken",
+        "description": "Simple comment token (e.g. '//')"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "An array of formatted lines that form the snippet, separated\n             into prefix selection and suffix, as well as the start and\n             end lines of the snippet in the original code base."
+    }
+  },
+  {
+    "__docId__": 76,
+    "kind": "method",
+    "name": "_preFormatSnippet",
+    "memberof": "src/core/formatter.js~AFormatter",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core/formatter.js~AFormatter#_preFormatSnippet",
+    "access": "private",
+    "description": "Performs the following preliminary tasks:\n - Fills open comments\n - Removes extra method signatures (===> scope break so it will be removed later)",
+    "lineNumber": 271,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} Array of pre-formatted lines."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "snippet",
+        "description": "The snippet, as an array of lines, to work on."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "selection",
+        "description": "The selection, as an array of lines, within the snippet."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "Array of pre-formatted lines."
+    }
+  },
+  {
+    "__docId__": 77,
+    "kind": "method",
+    "name": "_formatPrefix",
+    "memberof": "src/core/formatter.js~AFormatter",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core/formatter.js~AFormatter#_formatPrefix",
+    "access": "private",
+    "description": "Format the prefix of a snippet. The prefix is defines as all lines above the\nselection. Performs the following tasks:\n - Removes scopes that close but never open.\n - Removes empty lines at beginning of snippet.",
+    "lineNumber": 294,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} Formatted prefix string with the new beginning of the snippet\n               in the original file (again index starting with 1)."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "scopeTree",
+        "description": "The scope tree of the snippet."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "array",
+        "description": "The formatted snippet as an array of lines."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "oldStart",
+        "description": "The old start of the snippet in the original file\n                (line number, starting with 1 not 0)."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "Formatted prefix string with the new beginning of the snippet\n               in the original file (again index starting with 1)."
+    }
+  },
+  {
+    "__docId__": 78,
+    "kind": "method",
+    "name": "_formatSuffix",
+    "memberof": "src/core/formatter.js~AFormatter",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core/formatter.js~AFormatter#_formatSuffix",
+    "access": "private",
+    "description": "Format the suffix of a snippet. The suffix is defines as all lines below the\nselection. Performs the following tasks:\n - Removes methods and comments belonging to method below selection.\n - Removes empty lines at end of snippet.",
+    "lineNumber": 332,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} Formatted suffix string with the new end of the snippet\n               in the original file (again index starting with 1)."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "codeArray",
+        "description": "The formatted suffix as an array of lines."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "oldEnd",
+        "description": "The old end of the snippet in the original file\n              (line number, starting with 1 not 0)."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "Formatted suffix string with the new end of the snippet\n               in the original file (again index starting with 1)."
+    }
+  },
+  {
+    "__docId__": 79,
+    "kind": "method",
+    "name": "_preFormatArray",
+    "memberof": "src/core/formatter.js~AFormatter",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core/formatter.js~AFormatter#_preFormatArray",
+    "access": "private",
+    "description": "Pre-formats an empty array by adding the indentations\n(the specified format unit).",
+    "lineNumber": 366,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "array",
+        "description": "Array of lines of code."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "node",
+        "description": "Node of the scope tree."
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 80,
+    "kind": "method",
+    "name": "_fillBucketRange",
+    "memberof": "src/core/formatter.js~AFormatter",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core/formatter.js~AFormatter#_fillBucketRange",
+    "access": "private",
+    "description": "Adds indentations to the array from the start to the end index, inclusive.",
+    "lineNumber": 389,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "array",
+        "description": "Array of lines of code."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "start",
+        "description": "Start index of where to add indentations."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "end",
+        "description": "End index of where to stop adding indentations."
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 81,
+    "kind": "method",
+    "name": "_handleOpenComments",
+    "memberof": "src/core/formatter.js~AFormatter",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core/formatter.js~AFormatter#_handleOpenComments",
+    "access": "private",
+    "description": "If an open comment is met, take all lines necessary to close it\nfrom the original file and append them to the snippet.",
+    "lineNumber": 405,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} A snippet as an array of lines of code with no more\n             open comments."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "codeArray",
+        "description": "Array of lines of code."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "startLine",
+        "description": "The start line of the snippet in the original file."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "A snippet as an array of lines of code with no more\n             open comments."
+    }
+  },
+  {
+    "__docId__": 82,
+    "kind": "method",
+    "name": "_removeExtraMethodSigAbove",
+    "memberof": "src/core/formatter.js~AFormatter",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core/formatter.js~AFormatter#_removeExtraMethodSigAbove",
+    "access": "private",
+    "description": "Remove method signatures in the prefix that do not belong to the selection.",
+    "lineNumber": 422,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} Prefix with no more extra method signatures."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "codeArray",
+        "description": "Array of lines of code (prefix)."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "Prefix with no more extra method signatures."
+    }
+  },
+  {
+    "__docId__": 83,
+    "kind": "method",
+    "name": "_removeExtraMethodSigBelow",
+    "memberof": "src/core/formatter.js~AFormatter",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core/formatter.js~AFormatter#_removeExtraMethodSigBelow",
+    "access": "private",
+    "description": "Remove method signatures in the suffix that do not belong to the selection.",
+    "lineNumber": 463,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} Suffix with no more extra method signatures."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "codeArray",
+        "description": "Array of lines of code (suffix)."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "Suffix with no more extra method signatures."
+    }
+  },
+  {
+    "__docId__": 84,
+    "kind": "method",
+    "name": "_trimBeginning",
+    "memberof": "src/core/formatter.js~AFormatter",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core/formatter.js~AFormatter#_trimBeginning",
+    "access": "private",
+    "description": "Removes empty lines at beginning of snippet.",
+    "lineNumber": 486,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} Code array with no empty lines at beginning."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "codeArray",
+        "description": "Array of lines of code."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "Code array with no empty lines at beginning."
+    }
+  },
+  {
+    "__docId__": 85,
+    "kind": "method",
+    "name": "_trimEnd",
+    "memberof": "src/core/formatter.js~AFormatter",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core/formatter.js~AFormatter#_trimEnd",
+    "access": "private",
+    "description": "Removes empty lines at end of snippet.",
+    "lineNumber": 508,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} Code array with no empty lines at end."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "codeArray",
+        "description": "Array of lines of code."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "Code array with no empty lines at end."
+    }
+  },
+  {
+    "__docId__": 86,
+    "kind": "method",
+    "name": "_splitSelection",
+    "memberof": "src/core/formatter.js~AFormatter",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core/formatter.js~AFormatter#_splitSelection",
+    "access": "private",
+    "description": "Splits the code array into three parts: prefix, selection, suffix.\n\nPrefix: All lines above the selection.\nSuffix: All lines below the selection.",
+    "lineNumber": 535,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} An array containing again the prefix, selection and suffix as\n               arrays of lines of code."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "codeArray",
+        "description": "Array of lines of code."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "selection",
+        "description": "Selection to split codeArray on."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "An array containing again the prefix, selection and suffix as\n               arrays of lines of code."
+    }
+  },
+  {
+    "__docId__": 87,
+    "kind": "file",
+    "name": "src/core/scopeTree.js",
+    "content": "/**\n * A scope tree is a tree that captures the scope of a piece of code. A node\n * contains the start and end of the scope. If start or end is null then the\n * start or end is not in the code. A parent node contains all scopes inside\n * it as children nodes.\n */\nexport default class ScopeTree {\n\n  /**\n   * Creates a new node.\n   *\n   * @constructor\n   * @param parent The parent node.\n   * @param start The start of the scope of this node.\n   */\n  constructor(parent, start) {\n    /**\n     * @private\n     */\n    this.parent = parent\n\n    /**\n     * @private\n     */\n    this.children = []\n\n    /**\n     * @private\n     */\n    this.start = start\n\n    /**\n     * @private\n     */\n    this.end = null\n  }\n\n  /**\n   * Get the start of the scope.\n   *\n   * @returns {Number} The start of the scope, or null if not defined.\n   */\n  getStart() {\n    return this.start\n  }\n\n  /**\n   * Get the end of the scope.\n   *\n   * @returns {Number} The end of the scope, or null if not defined.\n   */\n  getEnd() {\n    return this.end\n  }\n\n  /**\n   * Get the parent of this node. Returns null if this is the root node.\n   *\n   * @returns {ScopeTree} The parent of this node, or null if this is the root node.\n   */\n  getParent() {\n    return this.parent\n  }\n\n  /**\n   * Get an array of all children of this node.\n   *\n   * @returns {Array} An array of all children of this node.\n   */\n  getChildren() {\n    return this.children\n  }\n\n  /**\n   * Add a child to this node.\n   *\n   * @param child The child to add to this node, should also be of type ScopeTree.\n   */\n  addChild(child) {\n    this.children.push(child)\n  }\n\n  /**\n   * Close this scope. This means the end of the scope has been reached.\n   *\n   * @param line The line that the scope ends at.\n   */\n  close(line) {\n    this.end = line\n  }\n\n  /**\n   * Returns true if the scope of this node is closed (meaning the scope has\n   * a start and an end point)\n   *\n   * @returns {Boolean} True if the scope for this node is defined, else false.\n   */\n  isClosed() {\n    return this.start !== null && this.end !== null\n  }\n\n  /**\n   * Balance the tree. This enforces an ordering of the nodes in the tree such\n   * that parent nodes are always 1 scope above their child nodes.\n   *\n   * By nature, the tree will be built in a balanced fashion. However because\n   * we might be dealing with snippets of code scope entries or exits (i.e. brackets)\n   * might be missing, which puts the tree out of balance. This method fixes that.\n   *\n   * Particularly, this moves all left siblings of a node that only has an end\n   * but not a start under it, making them his children.\n   *\n   * @example\n   *  <-> : scope is open and closed\n   *  <-  : scope is only opened but not closed\n   *   -> : scope is only closed but never opened\n   *\n   * IMBALANCED TREE                BALANCED TREE\n   *  -root-                         -root-\n   *    |                              |\n   *    |---------------               |-----\n   *    |    |    |    |               |    |\n   *    |    |    |    |               |    |\n   *   <->  <->   ->  <-    =======>   ->  <-\n   *                                   |\n   *    ^    ^    ^    ^               |-----\n   *    |    |    |    |               |    |\n   *   ok   ok   not  ok               |    |\n   *             ok                   <->  <->\n   */\n  balance() {\n    for (let i = 0; i < this.getChildren().length; i++) {\n      let child = this.getChildren()[i]\n\n      // Check if there is a lone closing scope\n      if (child.getStart() === null && child.getEnd() !== null) {\n\n        /* Pretend this lone closing scope had a matching opening scope at the\n         * beginning and turn all previous siblings into children of the closing\n         * scope.\n         */\n        for (let j = 0; j < i; j++) {\n          let sibling = this.getChildren()[0]\n          this.getChildren().splice(0, 1)\n          child.addChild(sibling)\n        }\n      }\n\n      child.balance()\n    }\n  }\n\n  /**\n   * Builds the scope tree. This function is designed in such a way that it can\n   * build scope trees over a variety of different programming languages. That\n   * is why as a parameter, the function takes two functions, each which\n   * determine where the scope starts or ends in a current line, if it does at\n   * all. These functions NEED to have the following signatures:\n   *\n   * Index:Integer scopeEnterFunc(arrayOfAllLines:Array, lineToCheckIndex:Integer)\n   * Index:Integer scopeExitFunc(arrayOfAllLines:Array, lineToCheckIndex:Integer)\n   *\n   * Both functions take the full array of lines and the index of the line to\n   * examine, and return the column within the line at which the scope is entered\n   * or exited. If there is no scope change in the line, null must be returned.\n   *\n   * @param lines Array of lines to build the scope tree over.\n   * @param index Current line number.\n   * @param scopeEnterFunc Function with the above signature. It takes the full\n   *        array of lines and the index of the line to examine, and returns\n   *        the column within the line at which the scope is entered. If no scope\n   *        is entered in the line, null must be returned.\n   * @param scopeExitFunc Function with the above signature. It takes the full\n   *        array of lines and the index of the line to examine, and returns\n   *        the column within the line at which the scope is exited. If no scope\n   *        is exited in the line, null must be returned.\n   * @returns {ScopeTree} The root node of the scope tree.\n   */\n  build(lines, index, scopeEnterFunc, scopeExitFunc) {\n    let node = this\n    if (lines.length === 0) {\n      if (node.getParent() !== null) {\n        return node.getParent().build([], index, scopeEnterFunc, scopeExitFunc);\n      } else {\n        return node\n      }\n    }\n\n    let enterIndex = scopeEnterFunc(lines, 0)\n    let exitIndex = scopeExitFunc(lines, 0)\n    let line = lines.shift()\n\n    if (enterIndex !== null && (enterIndex < exitIndex || exitIndex === null)) {\n      let child = new ScopeTree(node, index)\n      node.addChild(child)\n\n      let remaining = line.substr(enterIndex + 1);\n      if (scopeEnterFunc([remaining], 0) !== null) {\n        lines.unshift(remaining)\n        return child.build(lines, index, scopeEnterFunc, scopeExitFunc)\n      } else {\n        node = child // This allows us to check if the scope is closed in the\n                     // same line and if not we pass on the child as the next node\n      }\n    } else if (enterIndex !== null && exitIndex !== null) {\n      // Check for this case: } foo {\n      if (node.getParent() === null) {\n        let child = new ScopeTree(node, null)\n        child.close(index)\n        node.addChild(child)\n        node = child\n      } else {\n        node.close(index)\n      }\n\n      let remaining = line.substr(exitIndex + 1)\n      lines.unshift(remaining)\n      return node.getParent().build(lines, index, scopeEnterFunc, scopeExitFunc)\n    }\n\n    if (exitIndex !== null) {\n      if (node.getParent() === null) {\n        let child = new ScopeTree(node, null)\n        child.close(index)\n        node.addChild(child)\n        node = child // This avoids a null pointer exception when we call\n                     // node.getParent() below\n      } else {\n        node.close(index)\n      }\n\n      let remaining = line.substr(exitIndex + 1)\n\n      if (scopeExitFunc([remaining], 0) !== null) {\n        lines.unshift(remaining)\n        return node.getParent().build(lines, index, scopeEnterFunc, scopeExitFunc)\n      } else {\n        node = node.getParent()\n      }\n    }\n\n    return node.build(lines, index + 1, scopeEnterFunc, scopeExitFunc)\n  }\n}\n",
+    "static": true,
+    "longname": "/Users/julianbrendl/Projects/auto-format/src/core/scopeTree.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 88,
+    "kind": "class",
+    "name": "ScopeTree",
+    "memberof": "src/core/scopeTree.js",
+    "static": true,
+    "longname": "src/core/scopeTree.js~ScopeTree",
+    "access": "public",
+    "export": true,
+    "importPath": "auto-format/src/core/scopeTree.js",
+    "importStyle": "ScopeTree",
+    "description": "A scope tree is a tree that captures the scope of a piece of code. A node\ncontains the start and end of the scope. If start or end is null then the\nstart or end is not in the code. A parent node contains all scopes inside\nit as children nodes.",
+    "lineNumber": 7,
+    "interface": false
+  },
+  {
+    "__docId__": 89,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/core/scopeTree.js~ScopeTree",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core/scopeTree.js~ScopeTree#constructor",
+    "access": "public",
+    "description": "Creates a new node.",
+    "lineNumber": 16,
+    "unknown": [
+      {
+        "tagName": "@constructor",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "parent",
+        "description": "The parent node."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "start",
+        "description": "The start of the scope of this node."
+      }
+    ]
+  },
+  {
+    "__docId__": 90,
+    "kind": "member",
+    "name": "parent",
+    "memberof": "src/core/scopeTree.js~ScopeTree",
+    "static": false,
+    "longname": "src/core/scopeTree.js~ScopeTree#parent",
+    "access": "private",
+    "description": "",
+    "lineNumber": 20,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 91,
+    "kind": "member",
+    "name": "children",
+    "memberof": "src/core/scopeTree.js~ScopeTree",
+    "static": false,
+    "longname": "src/core/scopeTree.js~ScopeTree#children",
+    "access": "private",
+    "description": "",
+    "lineNumber": 25,
+    "type": {
+      "types": [
+        "*[]"
+      ]
+    }
+  },
+  {
+    "__docId__": 92,
+    "kind": "member",
+    "name": "start",
+    "memberof": "src/core/scopeTree.js~ScopeTree",
+    "static": false,
+    "longname": "src/core/scopeTree.js~ScopeTree#start",
+    "access": "private",
+    "description": "",
+    "lineNumber": 30,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 93,
+    "kind": "member",
+    "name": "end",
+    "memberof": "src/core/scopeTree.js~ScopeTree",
+    "static": false,
+    "longname": "src/core/scopeTree.js~ScopeTree#end",
+    "access": "private",
+    "description": "",
+    "lineNumber": 35,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 94,
+    "kind": "method",
+    "name": "getStart",
+    "memberof": "src/core/scopeTree.js~ScopeTree",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core/scopeTree.js~ScopeTree#getStart",
+    "access": "public",
+    "description": "Get the start of the scope.",
+    "lineNumber": 43,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Number} The start of the scope, or null if not defined."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Number"
+      ],
+      "spread": false,
+      "description": "The start of the scope, or null if not defined."
+    },
+    "params": []
+  },
+  {
+    "__docId__": 95,
+    "kind": "method",
+    "name": "getEnd",
+    "memberof": "src/core/scopeTree.js~ScopeTree",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core/scopeTree.js~ScopeTree#getEnd",
+    "access": "public",
+    "description": "Get the end of the scope.",
+    "lineNumber": 52,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Number} The end of the scope, or null if not defined."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Number"
+      ],
+      "spread": false,
+      "description": "The end of the scope, or null if not defined."
+    },
+    "params": []
+  },
+  {
+    "__docId__": 96,
+    "kind": "method",
+    "name": "getParent",
+    "memberof": "src/core/scopeTree.js~ScopeTree",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core/scopeTree.js~ScopeTree#getParent",
+    "access": "public",
+    "description": "Get the parent of this node. Returns null if this is the root node.",
+    "lineNumber": 61,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{ScopeTree} The parent of this node, or null if this is the root node."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "ScopeTree"
+      ],
+      "spread": false,
+      "description": "The parent of this node, or null if this is the root node."
+    },
+    "params": []
+  },
+  {
+    "__docId__": 97,
+    "kind": "method",
+    "name": "getChildren",
+    "memberof": "src/core/scopeTree.js~ScopeTree",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core/scopeTree.js~ScopeTree#getChildren",
+    "access": "public",
+    "description": "Get an array of all children of this node.",
+    "lineNumber": 70,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} An array of all children of this node."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "An array of all children of this node."
+    },
+    "params": []
+  },
+  {
+    "__docId__": 98,
+    "kind": "method",
+    "name": "addChild",
+    "memberof": "src/core/scopeTree.js~ScopeTree",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core/scopeTree.js~ScopeTree#addChild",
+    "access": "public",
+    "description": "Add a child to this node.",
+    "lineNumber": 79,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "child",
+        "description": "The child to add to this node, should also be of type ScopeTree."
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 99,
+    "kind": "method",
+    "name": "close",
+    "memberof": "src/core/scopeTree.js~ScopeTree",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core/scopeTree.js~ScopeTree#close",
+    "access": "public",
+    "description": "Close this scope. This means the end of the scope has been reached.",
+    "lineNumber": 88,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "line",
+        "description": "The line that the scope ends at."
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 101,
+    "kind": "method",
+    "name": "isClosed",
+    "memberof": "src/core/scopeTree.js~ScopeTree",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core/scopeTree.js~ScopeTree#isClosed",
+    "access": "public",
+    "description": "Returns true if the scope of this node is closed (meaning the scope has\na start and an end point)",
+    "lineNumber": 98,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Boolean} True if the scope for this node is defined, else false."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Boolean"
+      ],
+      "spread": false,
+      "description": "True if the scope for this node is defined, else false."
+    },
+    "params": []
+  },
+  {
+    "__docId__": 102,
+    "kind": "method",
+    "name": "balance",
+    "memberof": "src/core/scopeTree.js~ScopeTree",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core/scopeTree.js~ScopeTree#balance",
+    "access": "public",
+    "description": "Balance the tree. This enforces an ordering of the nodes in the tree such\nthat parent nodes are always 1 scope above their child nodes.\n\nBy nature, the tree will be built in a balanced fashion. However because\nwe might be dealing with snippets of code scope entries or exits (i.e. brackets)\nmight be missing, which puts the tree out of balance. This method fixes that.\n\nParticularly, this moves all left siblings of a node that only has an end\nbut not a start under it, making them his children.",
+    "examples": [
+      " <-> : scope is open and closed\n <-  : scope is only opened but not closed\n  -> : scope is only closed but never opened\n\nIMBALANCED TREE                BALANCED TREE\n -root-                         -root-\n   |                              |\n   |---------------               |-----\n   |    |    |    |               |    |\n   |    |    |    |               |    |\n  <->  <->   ->  <-    =======>   ->  <-\n                                  |\n   ^    ^    ^    ^               |-----\n   |    |    |    |               |    |\n  ok   ok   not  ok               |    |\n            ok                   <->  <->"
+    ],
+    "lineNumber": 131,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 103,
+    "kind": "method",
+    "name": "build",
+    "memberof": "src/core/scopeTree.js~ScopeTree",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core/scopeTree.js~ScopeTree#build",
+    "access": "public",
+    "description": "Builds the scope tree. This function is designed in such a way that it can\nbuild scope trees over a variety of different programming languages. That\nis why as a parameter, the function takes two functions, each which\ndetermine where the scope starts or ends in a current line, if it does at\nall. These functions NEED to have the following signatures:\n\nIndex:Integer scopeEnterFunc(arrayOfAllLines:Array, lineToCheckIndex:Integer)\nIndex:Integer scopeExitFunc(arrayOfAllLines:Array, lineToCheckIndex:Integer)\n\nBoth functions take the full array of lines and the index of the line to\nexamine, and return the column within the line at which the scope is entered\nor exited. If there is no scope change in the line, null must be returned.",
+    "lineNumber": 179,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{ScopeTree} The root node of the scope tree."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "lines",
+        "description": "Array of lines to build the scope tree over."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "index",
+        "description": "Current line number."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "scopeEnterFunc",
+        "description": "Function with the above signature. It takes the full\n       array of lines and the index of the line to examine, and returns\n       the column within the line at which the scope is entered. If no scope\n       is entered in the line, null must be returned."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "scopeExitFunc",
+        "description": "Function with the above signature. It takes the full\n       array of lines and the index of the line to examine, and returns\n       the column within the line at which the scope is exited. If no scope\n       is exited in the line, null must be returned."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "ScopeTree"
+      ],
+      "spread": false,
+      "description": "The root node of the scope tree."
+    }
+  },
+  {
+    "__docId__": 104,
+    "kind": "file",
+    "name": "src/formatters/javaFormatter.js",
+    "content": "import Formatter from \"../core/formatter\"\n\nvar SCOPE_ENTER_TOKEN = '{'\nvar SCOPE_EXIT_TOKEN = '}'\nvar EXPRESSION_TERMINATION_TOKEN = ';'\nvar ANNOTATION_TOKEN = '@'\nvar COMMENT_START_TOKEN = '/**'\nvar COMMENT_START_TOKEN_2 = '/*'\nvar COMMENT_BODY_TOKEN = '*'\nvar COMMENT_END_TOKEN = '*/'\nvar COMMENT_SIMPLE_TOKEN = '//'\nvar COMMENT_TOKENS = [COMMENT_START_TOKEN, COMMENT_START_TOKEN_2, COMMENT_BODY_TOKEN,\n  COMMENT_END_TOKEN, COMMENT_SIMPLE_TOKEN]\nvar PROTECTED_NON_METHOD_TOKENS = ['return', 'new']\n\n/**\n * JavaFormatter is the auto-formatter implementation for Java.\n * @extends {AFormatter}\n */\nexport default class JavaFormatter extends Formatter {\n  /**\n   * Create a new JavaFormatter\n   *\n   * @constructor\n   * @param formatUnit The token to be used for line indentations.\n   */\n  constructor(formatUnit) {\n    super(formatUnit)\n\n    /**\n     * @private\n     */\n    this.methodSigRegex = new RegExp(\"^(public |private |protected |static |final \" +\n      \"|native |synchronized |abstract |transient )*(<.*>\\\\s+)?\\\\w+(<.*>|\\\\[.*\\\\])\" +\n      \"?\\\\s+\\\\w+\\\\s*\\\\(.*$\")\n  }\n\n  /**\n   * Format a string of code. The string will be cut into lines and lines\n   * will be indented accordingly to their scope.\n   *\n   * @param codeString The string of code to format.\n   * @returns {Array} An array of formatted lines.\n   */\n  format(codeString) {\n    return this.formatSnippet(codeString, null, null, null)\n  }\n\n  /**\n   * A slight variation of format(codeString). Useful if you want to display\n   * a code snippet around a selection of lines.\n   *\n   * In addition to indenting lines, formatSnippet takes a selection as a\n   * start and end row in a large slab of code and cuts out a snippet of\n   * code around this selection. The start and end of the snippet is based\n   * on an offset that is provided as a parameter. The offset with the start\n   * and end of the selection create a sort of range from which the snippet\n   * is taken.\n   *\n   * In the example below, the selection is identified to belong to test2()\n   * and thus only test2() is returned. If the method is longer than the\n   * offset, than only the part within the offset will be returned. No code\n   * is added to the range with the exception of comment lines above the\n   * selection, to close unfinished comments.\n   *\n   * @example\n   * <caption>Selection start row: 11 ---- Selection end row: 11 ---- Offset: 6 ----> Snippet range: [11 - 6, 11 + 6] = [5, 17]</caption>\n   *\n   *  START:\n   * 1.  @Test\n   * 2.  public void test1() {\n     * 3.      System.out.println(\"Test 1\");\n     * 4.  }\n   * 5.\n   * 6.  // ------------------\n   * 7.  // Perform test 2.\n   * 8.  // ------------------\n   * 9. @Test\n   * 10. public void test2() {\n     * 11.     System.out.println(\"Test 2\");\n     * 12. }\n   * 13.\n   * 14. @Test\n   * 15. public void test3() {\n     * 16.     System.out.println(\"Test 3\");\n     * 17. }\n   * 18. ...\n   *\n   * RESULT:\n   * 6.  // ------------------\n   * 7.  // Perform test 2.\n   * 8.  // ------------------\n   * 9. @Test\n   * 10. public void test2() {\n     * 11.     System.out.println(\"Test 1\");\n     * 12. }\n   *\n   * @param code The original code base in which the selection is.\n   * @param startRow The start row of the selection in the code base.\n   * @param endRow The end row of the selection in the code base.\n   * @param offset The offset the defines the range on which to base the\n   *               snippet.\n   * @returns {Array} An array of formatted lines that form the snippet, separated\n   *              into prefix selection and suffix, as well as the start and\n   *              end lines of the snippet in the original code base.\n   */\n  formatSnippet(code, startRow, endRow, offset) {\n    return super.formatSnippet(code, startRow, endRow, offset,\n      ((codeArray, index) => this._expressionIdentifier(codeArray, index)),\n      ((lines, index) => this._scopeEnterFunc(lines, index)),\n      ((lines, index) => this._scopeExitFunc(lines, index)),\n      (line => this._checkForFunction(line)),\n      (line => this._checkForSpecialStatement(line)),\n      COMMENT_BODY_TOKEN, COMMENT_SIMPLE_TOKEN)\n  }\n\n  /**\n   * Checks if a line identified by an index in an array qualifies\n   * as an expression.\n   *\n   * An expression is defined as:\n   * - A line that ends with a termination token (e.g. ';')\n   * - A line that defines a scope start (e.g. '\\{')\n     * - A line that defines a scope end (e.g. '\\}')\n   * - A line that starts with a special character (e.g. '@')\n   * - A line that starts with a comment (e.g. '//')\n   * - An empty line (e.g. '')\n   *\n   * @param codeArray An array of lines of code.\n   * @param index The index of the relevant line in the code array.\n   * @returns {Boolean} True if the line qualifies as an expression, else false.\n   * @private\n   */\n  _expressionIdentifier(codeArray, index) {\n    if (codeArray.length > index) {\n      let line = codeArray[index].replace('\\n', '').trim()\n      return line.endsWith(EXPRESSION_TERMINATION_TOKEN)\n        || this._scopeEnterFunc([line], 0) !== null\n        || this._scopeExitFunc([line], 0) !== null\n        || this._checkForSpecialStatement(line)\n    }\n\n    return false\n  }\n\n  /**\n   * Checks if a line identified by an index in an array starts a new scope.\n   * Example: 'if (foo) {'\n     *\n   * @param codeArray An array of lines of code.\n   * @param index The index of the relevant line in the code array.\n   * @returns {Number} The position in the line where the new scope starts or null\n   *              if this line does not start a new scope.\n   * @private\n   */\n  _scopeEnterFunc(codeArray, index) {\n    return this._identifyScope(codeArray, index, SCOPE_ENTER_TOKEN)\n  }\n\n  /**\n   * Checks if a line identified by an index in an array ends an existing scope.\n   * Example: '}'\n   *\n   * @param codeArray An array of lines of code.\n   * @param index The index of the relevant line in the code array.\n   * @returns {Number} The position in the line where the scope ends or null\n   *              if this line does not end a scope.\n   * @private\n   */\n  _scopeExitFunc(codeArray, index) {\n    return this._identifyScope(codeArray, index, SCOPE_EXIT_TOKEN)\n  }\n\n  /**\n   * Helper method for _scopeEnterFunc and _scopeExitFunc.\n   *\n   * @param codeArray An array of lines of code.\n   * @param index The index of the relevant line in the code array.\n   * @param token The token to find in the line.\n   * @returns {Number} The position in the line where the scope starts or ends or\n   *              null if this line does neither.\n   * @private\n   */\n  _identifyScope(codeArray, index, token) {\n    if (codeArray.length > 0) {\n      let scopeIndex = this._calculateScopeIndex(codeArray[index], token)\n      if (scopeIndex !== -1) {\n        return scopeIndex\n      }\n      return null\n    } else {\n      return null\n    }\n  }\n\n  /**\n   * Calculate the scope index and make sure it is valid (look at _checkScopeIndex for more info)\n   *\n   * @param string The string that maybe contains the scope enter / exit token.\n   * @param token The scope enter / exit token to look for in the string.\n   * @returns {*} The position in the line where the scope starts or ends or\n   *              -1 if this line does neither.\n   * @private\n   */\n  _calculateScopeIndex(string, token) {\n    return this._checkScopeIndex(string, string.indexOf(token), token)\n  }\n\n  /**\n   *  Calculate the scope index and make sure it is valid, that means:\n   *    1. It is not inside quotation marks\n   *\n   *  If any of the above criteria is not met, the piece of code in question is cut off from the string,\n   *  and we start over with the remaining string.\n   *\n   * @param string The string that maybe contains the scope enter / exit token.\n   * @param scopeIndex The current \"potential\" scope index\n   * @param token The scope enter / exit token to look for in the string.\n   * @returns {*} The position in the line where the scope starts or ends or\n   *              -1 if this line does neither.\n   * @private\n   */\n  _checkScopeIndex(string, scopeIndex, token) {\n    if (scopeIndex === -1) {\n      return scopeIndex\n    }\n\n    // Check if scope identifier is inside quotation marks\n    let quotationRegex = /([\"'])(?:(?=(\\\\?))\\2.)*?\\1/\n    let match = quotationRegex.exec(string)\n\n    if (match === null || match[0].indexOf(token) === -1) {\n      return scopeIndex\n    }\n\n    let matchEnd = match.index + match[0].length\n    return this._calculateScopeIndex(string.substr(matchEnd), token)\n  }\n\n  /**\n   * Checks if a line contains a special statement.\n   *\n   * A special statement is defined in Java by:\n   * - An empty line (e.g. '')\n   * - A line that starts with an annotation (e.g. '@')\n   * - A line that starts with a comment (e.g. '//')\n   *\n   * @param line The line to check for a special statement.\n   * @returns {Boolean} True if the line contains a special statement, else false.\n   * @private\n   */\n  _checkForSpecialStatement(line) {\n    return line.startsWith(ANNOTATION_TOKEN)\n      || line === ''\n      || COMMENT_TOKENS.reduce((result, token) => result || line.startsWith(token), false)\n  }\n\n  /**\n   * Checks if a line is a method signature.\n   *\n   * @param line The line to check for.\n   * @returns {Boolean} True if the line is a method signature, else false.\n   * @private\n   */\n  _checkForFunction(line) {\n    if (PROTECTED_NON_METHOD_TOKENS.reduce((result, token) => result || line.trim()\n        .startsWith(token), false)) {\n      return false\n    }\n\n    return this.methodSigRegex.test(line)\n  }\n}\n",
+    "static": true,
+    "longname": "/Users/julianbrendl/Projects/auto-format/src/formatters/javaFormatter.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 105,
+    "kind": "variable",
+    "name": "SCOPE_ENTER_TOKEN",
+    "memberof": "src/formatters/javaFormatter.js",
+    "static": true,
+    "longname": "src/formatters/javaFormatter.js~SCOPE_ENTER_TOKEN",
+    "access": "public",
+    "export": false,
+    "importPath": "auto-format/src/formatters/javaFormatter.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 106,
+    "kind": "variable",
+    "name": "SCOPE_EXIT_TOKEN",
+    "memberof": "src/formatters/javaFormatter.js",
+    "static": true,
+    "longname": "src/formatters/javaFormatter.js~SCOPE_EXIT_TOKEN",
+    "access": "public",
+    "export": false,
+    "importPath": "auto-format/src/formatters/javaFormatter.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 107,
+    "kind": "variable",
+    "name": "EXPRESSION_TERMINATION_TOKEN",
+    "memberof": "src/formatters/javaFormatter.js",
+    "static": true,
+    "longname": "src/formatters/javaFormatter.js~EXPRESSION_TERMINATION_TOKEN",
+    "access": "public",
+    "export": false,
+    "importPath": "auto-format/src/formatters/javaFormatter.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 108,
+    "kind": "variable",
+    "name": "ANNOTATION_TOKEN",
+    "memberof": "src/formatters/javaFormatter.js",
+    "static": true,
+    "longname": "src/formatters/javaFormatter.js~ANNOTATION_TOKEN",
+    "access": "public",
+    "export": false,
+    "importPath": "auto-format/src/formatters/javaFormatter.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 109,
+    "kind": "variable",
+    "name": "COMMENT_START_TOKEN",
+    "memberof": "src/formatters/javaFormatter.js",
+    "static": true,
+    "longname": "src/formatters/javaFormatter.js~COMMENT_START_TOKEN",
+    "access": "public",
+    "export": false,
+    "importPath": "auto-format/src/formatters/javaFormatter.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 110,
+    "kind": "variable",
+    "name": "COMMENT_START_TOKEN_2",
+    "memberof": "src/formatters/javaFormatter.js",
+    "static": true,
+    "longname": "src/formatters/javaFormatter.js~COMMENT_START_TOKEN_2",
+    "access": "public",
+    "export": false,
+    "importPath": "auto-format/src/formatters/javaFormatter.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 111,
+    "kind": "variable",
+    "name": "COMMENT_BODY_TOKEN",
+    "memberof": "src/formatters/javaFormatter.js",
+    "static": true,
+    "longname": "src/formatters/javaFormatter.js~COMMENT_BODY_TOKEN",
+    "access": "public",
+    "export": false,
+    "importPath": "auto-format/src/formatters/javaFormatter.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 112,
+    "kind": "variable",
+    "name": "COMMENT_END_TOKEN",
+    "memberof": "src/formatters/javaFormatter.js",
+    "static": true,
+    "longname": "src/formatters/javaFormatter.js~COMMENT_END_TOKEN",
+    "access": "public",
+    "export": false,
+    "importPath": "auto-format/src/formatters/javaFormatter.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 113,
+    "kind": "variable",
+    "name": "COMMENT_SIMPLE_TOKEN",
+    "memberof": "src/formatters/javaFormatter.js",
+    "static": true,
+    "longname": "src/formatters/javaFormatter.js~COMMENT_SIMPLE_TOKEN",
+    "access": "public",
+    "export": false,
+    "importPath": "auto-format/src/formatters/javaFormatter.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 114,
+    "kind": "variable",
+    "name": "COMMENT_TOKENS",
+    "memberof": "src/formatters/javaFormatter.js",
+    "static": true,
+    "longname": "src/formatters/javaFormatter.js~COMMENT_TOKENS",
+    "access": "public",
+    "export": false,
+    "importPath": "auto-format/src/formatters/javaFormatter.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "type": {
+      "types": [
+        "undefined[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 115,
+    "kind": "variable",
+    "name": "PROTECTED_NON_METHOD_TOKENS",
+    "memberof": "src/formatters/javaFormatter.js",
+    "static": true,
+    "longname": "src/formatters/javaFormatter.js~PROTECTED_NON_METHOD_TOKENS",
+    "access": "public",
+    "export": false,
+    "importPath": "auto-format/src/formatters/javaFormatter.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 116,
+    "kind": "class",
+    "name": "JavaFormatter",
+    "memberof": "src/formatters/javaFormatter.js",
+    "static": true,
+    "longname": "src/formatters/javaFormatter.js~JavaFormatter",
+    "access": "public",
+    "export": true,
+    "importPath": "auto-format/src/formatters/javaFormatter.js",
+    "importStyle": "JavaFormatter",
+    "description": "JavaFormatter is the auto-formatter implementation for Java.",
+    "lineNumber": 20,
+    "interface": false,
+    "extends": [
+      "AFormatter"
+    ]
+  },
+  {
+    "__docId__": 117,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/formatters/javaFormatter.js~JavaFormatter",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/formatters/javaFormatter.js~JavaFormatter#constructor",
+    "access": "public",
+    "description": "Create a new JavaFormatter",
+    "lineNumber": 27,
+    "unknown": [
+      {
+        "tagName": "@constructor",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "formatUnit",
+        "description": "The token to be used for line indentations."
+      }
+    ]
+  },
+  {
+    "__docId__": 118,
+    "kind": "member",
+    "name": "methodSigRegex",
+    "memberof": "src/formatters/javaFormatter.js~JavaFormatter",
+    "static": false,
+    "longname": "src/formatters/javaFormatter.js~JavaFormatter#methodSigRegex",
+    "access": "private",
+    "description": "",
+    "lineNumber": 33,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 119,
+    "kind": "method",
+    "name": "format",
+    "memberof": "src/formatters/javaFormatter.js~JavaFormatter",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/formatters/javaFormatter.js~JavaFormatter#format",
+    "access": "public",
+    "description": "Format a string of code. The string will be cut into lines and lines\nwill be indented accordingly to their scope.",
+    "lineNumber": 45,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} An array of formatted lines."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "codeString",
+        "description": "The string of code to format."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "An array of formatted lines."
+    }
+  },
+  {
+    "__docId__": 120,
+    "kind": "method",
+    "name": "formatSnippet",
+    "memberof": "src/formatters/javaFormatter.js~JavaFormatter",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/formatters/javaFormatter.js~JavaFormatter#formatSnippet",
+    "access": "public",
+    "description": "A slight variation of format(codeString). Useful if you want to display\na code snippet around a selection of lines.\n\nIn addition to indenting lines, formatSnippet takes a selection as a\nstart and end row in a large slab of code and cuts out a snippet of\ncode around this selection. The start and end of the snippet is based\non an offset that is provided as a parameter. The offset with the start\nand end of the selection create a sort of range from which the snippet\nis taken.\n\nIn the example below, the selection is identified to belong to test2()\nand thus only test2() is returned. If the method is longer than the\noffset, than only the part within the offset will be returned. No code\nis added to the range with the exception of comment lines above the\nselection, to close unfinished comments.",
+    "examples": [
+      "<caption>Selection start row: 11 ---- Selection end row: 11 ---- Offset: 6 ----> Snippet range: [11 - 6, 11 + 6] = [5, 17]</caption>\n\n START:\n1.  @Test\n2.  public void test1() {\n3.      System.out.println(\"Test 1\");\n4.  }\n5.\n6.  // ------------------\n7.  // Perform test 2.\n8.  // ------------------\n9. @Test\n10. public void test2() {\n11.     System.out.println(\"Test 2\");\n12. }\n13.\n14. @Test\n15. public void test3() {\n16.     System.out.println(\"Test 3\");\n17. }\n18. ...\n\nRESULT:\n6.  // ------------------\n7.  // Perform test 2.\n8.  // ------------------\n9. @Test\n10. public void test2() {\n11.     System.out.println(\"Test 1\");\n12. }"
+    ],
+    "lineNumber": 107,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} An array of formatted lines that form the snippet, separated\n             into prefix selection and suffix, as well as the start and\n             end lines of the snippet in the original code base."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "code",
+        "description": "The original code base in which the selection is."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "startRow",
+        "description": "The start row of the selection in the code base."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "endRow",
+        "description": "The end row of the selection in the code base."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "offset",
+        "description": "The offset the defines the range on which to base the\n              snippet."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "An array of formatted lines that form the snippet, separated\n             into prefix selection and suffix, as well as the start and\n             end lines of the snippet in the original code base."
+    }
+  },
+  {
+    "__docId__": 121,
+    "kind": "method",
+    "name": "_expressionIdentifier",
+    "memberof": "src/formatters/javaFormatter.js~JavaFormatter",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/formatters/javaFormatter.js~JavaFormatter#_expressionIdentifier",
+    "access": "private",
+    "description": "Checks if a line identified by an index in an array qualifies\nas an expression.\n\nAn expression is defined as:\n- A line that ends with a termination token (e.g. ';')\n- A line that defines a scope start (e.g. '\\{')\n- A line that defines a scope end (e.g. '\\}')\n- A line that starts with a special character (e.g. '@')\n- A line that starts with a comment (e.g. '//')\n- An empty line (e.g. '')",
+    "lineNumber": 134,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Boolean} True if the line qualifies as an expression, else false."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "codeArray",
+        "description": "An array of lines of code."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "index",
+        "description": "The index of the relevant line in the code array."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Boolean"
+      ],
+      "spread": false,
+      "description": "True if the line qualifies as an expression, else false."
+    }
+  },
+  {
+    "__docId__": 122,
+    "kind": "method",
+    "name": "_scopeEnterFunc",
+    "memberof": "src/formatters/javaFormatter.js~JavaFormatter",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/formatters/javaFormatter.js~JavaFormatter#_scopeEnterFunc",
+    "access": "private",
+    "description": "Checks if a line identified by an index in an array starts a new scope.\nExample: 'if (foo) {'",
+    "lineNumber": 156,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Number} The position in the line where the new scope starts or null\n             if this line does not start a new scope."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "codeArray",
+        "description": "An array of lines of code."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "index",
+        "description": "The index of the relevant line in the code array."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Number"
+      ],
+      "spread": false,
+      "description": "The position in the line where the new scope starts or null\n             if this line does not start a new scope."
+    }
+  },
+  {
+    "__docId__": 123,
+    "kind": "method",
+    "name": "_scopeExitFunc",
+    "memberof": "src/formatters/javaFormatter.js~JavaFormatter",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/formatters/javaFormatter.js~JavaFormatter#_scopeExitFunc",
+    "access": "private",
+    "description": "Checks if a line identified by an index in an array ends an existing scope.\nExample: '}'",
+    "lineNumber": 170,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Number} The position in the line where the scope ends or null\n             if this line does not end a scope."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "codeArray",
+        "description": "An array of lines of code."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "index",
+        "description": "The index of the relevant line in the code array."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Number"
+      ],
+      "spread": false,
+      "description": "The position in the line where the scope ends or null\n             if this line does not end a scope."
+    }
+  },
+  {
+    "__docId__": 124,
+    "kind": "method",
+    "name": "_identifyScope",
+    "memberof": "src/formatters/javaFormatter.js~JavaFormatter",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/formatters/javaFormatter.js~JavaFormatter#_identifyScope",
+    "access": "private",
+    "description": "Helper method for _scopeEnterFunc and _scopeExitFunc.",
+    "lineNumber": 184,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Number} The position in the line where the scope starts or ends or\n             null if this line does neither."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "codeArray",
+        "description": "An array of lines of code."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "index",
+        "description": "The index of the relevant line in the code array."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "token",
+        "description": "The token to find in the line."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Number"
+      ],
+      "spread": false,
+      "description": "The position in the line where the scope starts or ends or\n             null if this line does neither."
+    }
+  },
+  {
+    "__docId__": 125,
+    "kind": "method",
+    "name": "_calculateScopeIndex",
+    "memberof": "src/formatters/javaFormatter.js~JavaFormatter",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/formatters/javaFormatter.js~JavaFormatter#_calculateScopeIndex",
+    "access": "private",
+    "description": "Calculate the scope index and make sure it is valid (look at _checkScopeIndex for more info)",
+    "lineNumber": 205,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{*} The position in the line where the scope starts or ends or\n             -1 if this line does neither."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "string",
+        "description": "The string that maybe contains the scope enter / exit token."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "token",
+        "description": "The scope enter / exit token to look for in the string."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "The position in the line where the scope starts or ends or\n             -1 if this line does neither."
+    }
+  },
+  {
+    "__docId__": 126,
+    "kind": "method",
+    "name": "_checkScopeIndex",
+    "memberof": "src/formatters/javaFormatter.js~JavaFormatter",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/formatters/javaFormatter.js~JavaFormatter#_checkScopeIndex",
+    "access": "private",
+    "description": " Calculate the scope index and make sure it is valid, that means:\n   1. It is not inside quotation marks\n\n If any of the above criteria is not met, the piece of code in question is cut off from the string,\n and we start over with the remaining string.",
+    "lineNumber": 223,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{*} The position in the line where the scope starts or ends or\n             -1 if this line does neither."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "string",
+        "description": "The string that maybe contains the scope enter / exit token."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "scopeIndex",
+        "description": "The current \"potential\" scope index"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "token",
+        "description": "The scope enter / exit token to look for in the string."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "The position in the line where the scope starts or ends or\n             -1 if this line does neither."
+    }
+  },
+  {
+    "__docId__": 127,
+    "kind": "method",
+    "name": "_checkForSpecialStatement",
+    "memberof": "src/formatters/javaFormatter.js~JavaFormatter",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/formatters/javaFormatter.js~JavaFormatter#_checkForSpecialStatement",
+    "access": "private",
+    "description": "Checks if a line contains a special statement.\n\nA special statement is defined in Java by:\n- An empty line (e.g. '')\n- A line that starts with an annotation (e.g. '@')\n- A line that starts with a comment (e.g. '//')",
+    "lineNumber": 252,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Boolean} True if the line contains a special statement, else false."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "line",
+        "description": "The line to check for a special statement."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Boolean"
+      ],
+      "spread": false,
+      "description": "True if the line contains a special statement, else false."
+    }
+  },
+  {
+    "__docId__": 128,
+    "kind": "method",
+    "name": "_checkForFunction",
+    "memberof": "src/formatters/javaFormatter.js~JavaFormatter",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/formatters/javaFormatter.js~JavaFormatter#_checkForFunction",
+    "access": "private",
+    "description": "Checks if a line is a method signature.",
+    "lineNumber": 265,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Boolean} True if the line is a method signature, else false."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "line",
+        "description": "The line to check for."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Boolean"
+      ],
+      "spread": false,
+      "description": "True if the line is a method signature, else false."
+    }
+  },
+  {
+    "__docId__": 129,
+    "kind": "file",
+    "name": "src/index.js",
+    "content": "import JavaFormatter from \"./formatters/javaFormatter\"\n\n/**\n * The entry point of the module. Here formatters for various languages can be created.\n * As of right now, only Java is available.\n *\n * The <code>formatUnit</code> is always the token to be used for line indentations (ex. 2 spaces and 4 spaces).\n *\n * Available functions:\n * - <pre><code>JavaFormatter createJavaFormatter(formatUnit:String)</code></pre>\n *\n */\nconst Formatter = {\n  /**\n   * Create an auto-formatter for java code.\n   *\n   * @param formatUnit The token to be used for line indentations. (ex. \"  \" or \"    \")\n   * @returns {JavaFormatter} Auto-formatter for java code.\n   */\n  createJavaFormatter(formatUnit) {\n    return new JavaFormatter(formatUnit)\n  }\n}\n\nexport default Formatter\n",
+    "static": true,
+    "longname": "/Users/julianbrendl/Projects/auto-format/src/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 130,
+    "kind": "variable",
+    "name": "Formatter",
+    "memberof": "src/index.js",
+    "static": true,
+    "longname": "src/index.js~Formatter",
+    "access": "public",
+    "export": true,
+    "importPath": "auto-format/src/index.js",
+    "importStyle": "Formatter",
+    "description": "The entry point of the module. Here formatters for various languages can be created.\nAs of right now, only Java is available.\n\nThe <code>formatUnit</code> is always the token to be used for line indentations (ex. 2 spaces and 4 spaces).\n\nAvailable functions:\n- <pre><code>JavaFormatter createJavaFormatter(formatUnit:String)</code></pre>",
+    "lineNumber": 13,
+    "type": {
+      "types": [
+        "{\"createJavaFormatter\": function}"
+      ]
+    }
+  },
+  {
+    "kind": "index",
+    "content": "# auto-format\n\n[![Build Status](https://travis-ci.org/jundl77/auto-format.svg?branch=master)](https://travis-ci.org/jundl77/auto-format)\n[![Coverage Status](https://coveralls.io/repos/github/jundl77/auto-format/badge.svg?branch=master)](https://coveralls.io/github/jundl77/auto-format?branch=master)\n[![npm](http://img.shields.io/npm/v/auto-format.svg?style=flat)](https://www.npmjs.com/package/auto-format)\n[![Document](https://img.shields.io/badge/docs-latest-brightgreen.svg?style=flat)](https://doc.esdoc.org/github.com/jundl77/auto-format/)\n\nAn easy to use, light-weight library to auto-format code in javascript. Works well with code highlighting libraries to display beautiful, uniformly formatted code. \n\nAs of right now only Java can be formatted properly, although you will probably get decent results with any language that uses brackets as scope delimiters. Further more the library is very extensible, in fact you only have to implement 5 methods to add support for another language.\nPlease see [contribute](#contribute) if you would like to contribute. Help is always welcome!\n\n## Examples\n*format* method:\n![](https://raw.githubusercontent.com/jundl77/auto-format/readme/images/af-format.gif)\n\nYou can also check out https://exemplator.xyz where all code samples are formatted\nwith this library.\n\n[Live example](https://runkit.com/jundl77/auto-format.format) of *format* method.\n\n## Install\n\nRun ` npm install auto-format --save`\n\n## Usage\n\nAs of right now, only Java is fully supported.\n\nES6: \n```es6 \nimport Formatter from \"auto-format\"\n```\nVanilla JS: \n\n```js \nvar Formatter = require('auto-format');\n```\n***\n\n#### Simple example: *format*\n\n```js\nvar indentToken = \"   \";\nvar unformattedCode = \"code to format\";\n\nvar javaFormatter = Formatter.createJavaFormatter(indentToken);\nvar formattedCode = javaFormatter.format(unformattedCode);\n```\nFormat a string of code. The string will be cut into lines and lines will \nbe indented accordingly to their scope.\n\n##### -- Parameters:\n`indentToken` : The token used to indent lines (e.g. 2 or 4 spaces).\n\n`unformattedCode` : A string of unformatted code (including line breaks).\n\n##### -- Return:\n`formattedCode` : An array lines of code. All lines will have been correctly\n                  indented according to their scope.\n                  \n***\n\n#### Complex example: *formatSnippet*\n\n```js\nvar indentToken = \"   \";\nvar javaFormatter = Formatter.createJavaFormatter(indentToken);\n\nvar unformattedCode = \"code to format\";\nvar selectionStartRow = 11;\nvar selectionEndRow = 11;\nvar snippetOffset = 6;\n\nvar formattedCode = javaFormatter.formatSnippet(unformattedCode, selectionStartRow, \n    selectionEndRow, snippetOffset);\n```\n\nA slight variation of format(codeString). Useful if you want to display a code snippet around a selection of lines like\n[here](https://exemplator.xyz).\n\nIn addition to indenting lines, formatSnippet takes a selection and an offset. \n\nThe selection consists of one or several lines which should be \"highlighted\" in the code. For example the line that you would like to show off. The offset defines the number of lines above and below the selection.\n\nThe start and end of the snippet is calculated from the selection start, end and the offset. `formatSnippet` intelligently cuts the snippet out of the original codebase. 'Intelligently' means the method\nalways tries to cut out only the method out of the selection. If the method is too big, only a part of the method will be cut out, but lines outside this method (i.e. other methods etc.) are cut away unless they comment that method.\n\n##### -- Parameters:\n`indentToken` : The token used to indent lines (e.g. 2 or 4 spaces).\n\n`unformattedCode` : A string of unformatted code (including line breaks).\n\n`selectionStartRow` : The start row of the selection in the code base.\n\n`selectionEndRow` : The end row of the selection in the code base.\n\n`snippetOffset` : The number of lines above and below the selection.\n\n##### -- Example:\n```\nSelection start row: 11\nSelection end row: 11\nOffset: 6 \n------------------------------\nSnippet start row: 11 - 6 = 5\nSnippet end row: 11 + 6 = 17\n```\n\n##### -- Return:\n`formattedCode` : An array in the form of\n```\n[code string above selection, code string of selection, code string below selection,\n[new start line of snippet in original file, new end line of snippet in original file]]\n```\n\nFor more details and examples see the [documentation](https://doc.esdoc.org/github.com/jundl77/auto-format/).\n\n## Contribute\n\nPull requests are always welcome. To add support for a new language, look at the [JavaFormatter](./src/formatters/javaFormatter.js).\n\nThe documentation is [here](https://doc.esdoc.org/github.com/jundl77/auto-format/).\n\n",
+    "longname": "/Users/julianbrendl/Projects/auto-format/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"auto-format\",\n  \"version\": \"1.0.11\",\n  \"description\": \"A javascript auto-formatting library for code snippets.\",\n  \"main\": \"lib/lib.min.js\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/jundl77/auto-format.git\"\n  },\n  \"keywords\": [\n    \"javascript\",\n    \"auto\",\n    \"format\",\n    \"auto-format\",\n    \"code\",\n    \"snippet\",\n    \"layout\",\n    \"java\"\n  ],\n  \"author\": \"Julian Brendl\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/jundl77/auto-format/issues\"\n  },\n  \"homepage\": \"https://github.com/jundl77/auto-format#readme\",\n  \"dependencies\": {},\n  \"devDependencies\": {\n    \"babel-cli\": \"^6.18.0\",\n    \"babel-loader\": \"^6.2.8\",\n    \"babel-plugin-add-module-exports\": \"^0.2.1\",\n    \"babel-polyfill\": \"^6.16.0\",\n    \"babel-preset-es2015\": \"^6.18.0\",\n    \"babel-preset-stage-0\": \"^6.16.0\",\n    \"babel-register\": \"^6.18.0\",\n    \"chai\": \"^3.5.0\",\n    \"coffee-coverage\": \"^1.0.1\",\n    \"coveralls\": \"^2.11.15\",\n    \"esdoc\": \"^1.0.1\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"isparta\": \"^4.0.0\",\n    \"minami\": \"^1.1.1\",\n    \"mocha\": \"^3.1.2\",\n    \"mocha-lcov-reporter\": \"^1.2.0\",\n    \"npm-run-all\": \"^3.1.1\",\n    \"webpack\": \"^1.13.3\"\n  },\n  \"scripts\": {\n    \"start\": \"npm-run-all build test\",\n    \"test\": \"mocha --compilers js:babel-register --require babel-polyfill\",\n    \"cover\": \"babel-node ./node_modules/.bin/isparta cover _mocha\",\n    \"precoveralls\": \"npm run cover\",\n    \"coveralls\": \"coveralls < coverage/lcov.info\",\n    \"build\": \"webpack -p\",\n    \"generate-docs\": \"esdoc -c esdoc.json\",\n    \"deploy-docs\": \"gh-pages-deploy\",\n    \"prepublish\": \"npm-run-all build test\"\n  },\n  \"gh-pages-deploy\": {\n    \"staticpath\": \"./docs\",\n    \"prep\": [],\n    \"post\": [\n      \"clean-source\"\n    ],\n    \"noprompt\": false\n  }\n}\n",
+    "longname": "/Users/julianbrendl/Projects/auto-format/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "coverage": "83.58%",
+  "expectCount": 67,
+  "actualCount": 56,
+  "files": {
+    "src/core/formatter.js": {
+      "expectCount": 27,
+      "actualCount": 27,
+      "undocumentLines": []
+    },
+    "src/core/scopeTree.js": {
+      "expectCount": 15,
+      "actualCount": 15,
+      "undocumentLines": []
+    },
+    "src/formatters/javaFormatter.js": {
+      "expectCount": 24,
+      "actualCount": 13,
+      "undocumentLines": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14
+      ]
+    },
+    "src/index.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    }
+  }
+}

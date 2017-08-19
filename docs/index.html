@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl">
+  <title data-ice="title">Home | auto-format</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="A javascript auto-formatting library for code snippets."><meta property="twitter:card" content="summary"><meta property="twitter:title" content="auto-format"><meta property="twitter:description" content="A javascript auto-formatting library for code snippets."></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/jundl77/auto-format"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Formatter">Formatter</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core">core</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/formatter.js~AFormatter.html">AFormatter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/scopeTree.js~ScopeTree.html">ScopeTree</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#formatters">formatters</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/formatters/javaFormatter.js~JavaFormatter.html">JavaFormatter</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="auto-format">auto-format</h1><p><a href="https://travis-ci.org/jundl77/auto-format"><img src="https://travis-ci.org/jundl77/auto-format.svg?branch=master" alt="Build Status"></a>
+<a href="https://coveralls.io/github/jundl77/auto-format?branch=master"><img src="https://coveralls.io/repos/github/jundl77/auto-format/badge.svg?branch=master" alt="Coverage Status"></a>
+<a href="https://www.npmjs.com/package/auto-format"><img src="http://img.shields.io/npm/v/auto-format.svg?style=flat" alt="npm"></a>
+<a href="https://doc.esdoc.org/github.com/jundl77/auto-format/"><img src="https://img.shields.io/badge/docs-latest-brightgreen.svg?style=flat" alt="Document"></a></p>
+<p>An easy to use, light-weight library to auto-format code in javascript. Works well with code highlighting libraries to display beautiful, uniformly formatted code. </p>
+<p>As of right now only Java can be formatted properly, although you will probably get decent results with any language that uses brackets as scope delimiters. Further more the library is very extensible, in fact you only have to implement 5 methods to add support for another language.
+Please see <a href="#contribute">contribute</a> if you would like to contribute. Help is always welcome!</p>
+<h2 id="examples">Examples</h2><p><em>format</em> method:
+<img src="https://raw.githubusercontent.com/jundl77/auto-format/readme/images/af-format.gif" alt=""></p>
+<p>You can also check out <a href="https://exemplator.xyz">https://exemplator.xyz</a> where all code samples are formatted
+with this library.</p>
+<p><a href="https://runkit.com/jundl77/auto-format.format">Live example</a> of <em>format</em> method.</p>
+<h2 id="install">Install</h2><p>Run <code>npm install auto-format --save</code></p>
+<h2 id="usage">Usage</h2><p>As of right now, only Java is fully supported.</p>
+<p>ES6: </p>
+<pre><code class="lang-es6"><code class="source-code prettyprint">import Formatter from &quot;auto-format&quot;</code>
+</code></pre>
+<p>Vanilla JS: </p>
+<pre><code class="lang-js"><code class="source-code prettyprint">var Formatter = require(&apos;auto-format&apos;);</code>
+</code></pre>
+<hr>
+<h4 id="simple-example---em-format--em-">Simple example: <em>format</em></h4><pre><code class="lang-js"><code class="source-code prettyprint">var indentToken = &quot;   &quot;;
+var unformattedCode = &quot;code to format&quot;;
+
+var javaFormatter = Formatter.createJavaFormatter(indentToken);
+var formattedCode = javaFormatter.format(unformattedCode);</code>
+</code></pre>
+<p>Format a string of code. The string will be cut into lines and lines will 
+be indented accordingly to their scope.</p>
+<h5 id="---parameters-">-- Parameters:</h5><p><code>indentToken</code> : The token used to indent lines (e.g. 2 or 4 spaces).</p>
+<p><code>unformattedCode</code> : A string of unformatted code (including line breaks).</p>
+<h5 id="---return-">-- Return:</h5><p><code>formattedCode</code> : An array lines of code. All lines will have been correctly
+                  indented according to their scope.</p>
+<hr>
+<h4 id="complex-example---em-formatsnippet--em-">Complex example: <em>formatSnippet</em></h4><pre><code class="lang-js"><code class="source-code prettyprint">var indentToken = &quot;   &quot;;
+var javaFormatter = Formatter.createJavaFormatter(indentToken);
+
+var unformattedCode = &quot;code to format&quot;;
+var selectionStartRow = 11;
+var selectionEndRow = 11;
+var snippetOffset = 6;
+
+var formattedCode = javaFormatter.formatSnippet(unformattedCode, selectionStartRow, 
+    selectionEndRow, snippetOffset);</code>
+</code></pre>
+<p>A slight variation of format(codeString). Useful if you want to display a code snippet around a selection of lines like
+<a href="https://exemplator.xyz">here</a>.</p>
+<p>In addition to indenting lines, formatSnippet takes a selection and an offset. </p>
+<p>The selection consists of one or several lines which should be &quot;highlighted&quot; in the code. For example the line that you would like to show off. The offset defines the number of lines above and below the selection.</p>
+<p>The start and end of the snippet is calculated from the selection start, end and the offset. <code>formatSnippet</code> intelligently cuts the snippet out of the original codebase. &apos;Intelligently&apos; means the method
+always tries to cut out only the method out of the selection. If the method is too big, only a part of the method will be cut out, but lines outside this method (i.e. other methods etc.) are cut away unless they comment that method.</p>
+<h5 id="---parameters-">-- Parameters:</h5><p><code>indentToken</code> : The token used to indent lines (e.g. 2 or 4 spaces).</p>
+<p><code>unformattedCode</code> : A string of unformatted code (including line breaks).</p>
+<p><code>selectionStartRow</code> : The start row of the selection in the code base.</p>
+<p><code>selectionEndRow</code> : The end row of the selection in the code base.</p>
+<p><code>snippetOffset</code> : The number of lines above and below the selection.</p>
+<h5 id="---example-">-- Example:</h5><pre><code><code class="source-code prettyprint">Selection start row: 11
+Selection end row: 11
+Offset: 6 
+------------------------------
+Snippet start row: 11 - 6 = 5
+Snippet end row: 11 + 6 = 17</code>
+</code></pre><h5 id="---return-">-- Return:</h5><p><code>formattedCode</code> : An array in the form of</p>
+<pre><code><code class="source-code prettyprint">[code string above selection, code string of selection, code string below selection,
+[new start line of snippet in original file, new end line of snippet in original file]]</code>
+</code></pre><p>For more details and examples see the <a href="https://doc.esdoc.org/github.com/jundl77/auto-format/">documentation</a>.</p>
+<h2 id="contribute">Contribute</h2><p>Pull requests are always welcome. To add support for a new language, look at the <a href="./src/formatters/javaFormatter.js">JavaFormatter</a>.</p>
+<p>The documentation is <a href="https://doc.esdoc.org/github.com/jundl77/auto-format/">here</a>.</p>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.1)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
