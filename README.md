@@ -76,7 +76,7 @@ var formattedCode = javaFormatter.formatSnippet(unformattedCode, selectionStartR
     selectionEndRow, snippetOffset);
 ```
 
-A slight variation of format(codeString). Useful if you want to display a code snippet around a selection of lines like
+A slight variation of ```format(codeString)```. Useful if you want to display a code snippet around a selection of lines like
 [here](https://exemplator.xyz).
 
 In addition to indenting lines, formatSnippet takes a selection and an offset. 
