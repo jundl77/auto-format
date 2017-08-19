@@ -11,15 +11,15 @@ import JavaFormatter from "./formatters/javaFormatter"
  *
  */
 const Formatter = {
-    /**
-     * Create an auto-formatter for java code.
-     *
-     * @param formatUnit The token to be used for line indentations. (ex. "  " or "    ")
-     * @returns {JavaFormatter} Auto-formatter for java code.
-     */
-    createJavaFormatter(formatUnit) {
-        return new JavaFormatter(formatUnit)
-    }
+  /**
+   * Create an auto-formatter for java code.
+   *
+   * @param formatUnit The token to be used for line indentations. (ex. "  " or "    ")
+   * @returns {JavaFormatter} Auto-formatter for java code.
+   */
+  createJavaFormatter(formatUnit) {
+    return new JavaFormatter(formatUnit)
+  }
 }
 
 export default Formatter
