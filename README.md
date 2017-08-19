@@ -25,7 +25,7 @@ Run ` npm install auto-format --save`
 
 ## Usage
 
-As of right now, only fully Java is supported.
+As of right now, only Java is fully supported.
 
 ES6: 
 ```es6 
