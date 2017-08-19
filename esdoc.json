@@ -3,15 +3,7 @@
   "destination": "./docs",
   "plugins": [{
     "name": "esdoc-standard-plugin",
-    "option": {
-      "accessor": {
-        "access": [
-          "public",
-          "protected",
-          "private"
-        ],
-        "autoPrivate": true
-      }
+    "option": {"accessor": {"access": ["public", "protected", "private"], "autoPrivate": true}
     }
   }]
 }
