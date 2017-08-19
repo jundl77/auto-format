@@ -52,15 +52,6 @@
     "coveralls": "coveralls < coverage/lcov.info",
     "build": "webpack -p",
     "generate-docs": "esdoc -c esdoc.json",
-    "deploy-docs": "gh-pages-deploy",
     "prepublish": "npm-run-all build test"
-  },
-  "gh-pages-deploy": {
-    "staticpath": "./docs",
-    "prep": [],
-    "post": [
-      "clean-source"
-    ],
-    "noprompt": false
   }
 }
