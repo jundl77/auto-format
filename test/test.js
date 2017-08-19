@@ -20,7 +20,7 @@ function blackBoxTest(formatter, json) {
 
       let formatSnippetResultArrays = formatter.formatSnippet(test.code,
         test.selectionStart, test.selectionEnd, test.offset)
-      console.log("FORMAT RESULT FOR TEST CASE: " + test.label + "\n")
+      console.log("FORMAT SNIPPET RESULT FOR TEST CASE: " + test.label + "\n")
       console.log(formatResult)
       console.log("\n")
 
