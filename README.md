@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/jundl77/auto-format.svg?branch=master)](https://travis-ci.org/jundl77/auto-format)
 [![Coverage Status](https://coveralls.io/repos/github/jundl77/auto-format/badge.svg?branch=master)](https://coveralls.io/github/jundl77/auto-format?branch=master)
 [![npm](http://img.shields.io/npm/v/auto-format.svg?style=flat)](https://www.npmjs.com/package/auto-format)
-[![Document](https://doc.esdoc.org/github.com/jundl77/auto-format/badge.svg)](https://doc.esdoc.org/github.com/jundl77/auto-format/)
+[![Document](https://img.shields.io/badge/docs-latest-brightgreen.svg?style=flat)](https://doc.esdoc.org/github.com/jundl77/auto-format/)
 
 An easy to use, light-weight library to auto-format code in javascript. Works well with code highlighting libraries to display beautiful, uniformly formatted code. 
 
