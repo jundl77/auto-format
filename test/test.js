@@ -48,7 +48,6 @@ function blackBoxTest(formatter, json) {
       let formatSnippetResult = formatSnippetResultArrays[0].split('\n').concat(formatSnippetResultArrays[1]
         .split('\n').concat(formatSnippetResultArrays[2].split('\n')))
       let controlSnippetArray = test.formatSnippetResult.split('\n');
-      console.log(formatSnippetResult)
       expect(formatSnippetResult.length).to.equal(controlSnippetArray.length)
       for (let i = 0; i < controlSnippetArray.length; i++) {
         expect(formatSnippetResult[i]).to.equal(controlSnippetArray[i])
