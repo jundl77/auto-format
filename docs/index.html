@@ -40,7 +40,7 @@
 <div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="auto-format">auto-format</h1><p><a href="https://travis-ci.org/jundl77/auto-format"><img src="https://travis-ci.org/jundl77/auto-format.svg?branch=master" alt="Build Status"></a>
 <a href="https://coveralls.io/github/jundl77/auto-format?branch=master"><img src="https://coveralls.io/repos/github/jundl77/auto-format/badge.svg?branch=master" alt="Coverage Status"></a>
 <a href="https://www.npmjs.com/package/auto-format"><img src="http://img.shields.io/npm/v/auto-format.svg?style=flat" alt="npm"></a>
-<a href="https://doc.esdoc.org/github.com/jundl77/auto-format/"><img src="https://img.shields.io/badge/docs-latest-brightgreen.svg?style=flat" alt="Document"></a></p>
+<a href="https://jundl77.github.io/auto-format/"><img src="https://img.shields.io/badge/docs-latest-brightgreen.svg?style=flat" alt="Document"></a></p>
 <p>An easy to use, light-weight library to auto-format code in javascript. Works well with code highlighting libraries to display beautiful, uniformly formatted code. </p>
 <p>As of right now only Java can be formatted properly, although you will probably get decent results with any language that uses brackets as scope delimiters. Further more the library is very extensible, in fact you only have to implement 5 methods to add support for another language.
 Please see <a href="#contribute">contribute</a> if you would like to contribute. Help is always welcome!</p>
@@ -82,7 +82,7 @@ var snippetOffset = 6;
 var formattedCode = javaFormatter.formatSnippet(unformattedCode, selectionStartRow, 
     selectionEndRow, snippetOffset);</code>
 </code></pre>
-<p>A slight variation of format(codeString). Useful if you want to display a code snippet around a selection of lines like
+<p>A slight variation of <code>format(codeString)</code>. Useful if you want to display a code snippet around a selection of lines like
 <a href="https://exemplator.xyz">here</a>.</p>
 <p>In addition to indenting lines, formatSnippet takes a selection and an offset. </p>
 <p>The selection consists of one or several lines which should be &quot;highlighted&quot; in the code. For example the line that you would like to show off. The offset defines the number of lines above and below the selection.</p>
@@ -102,9 +102,9 @@ Snippet end row: 11 + 6 = 17</code>
 </code></pre><h5 id="---return-">-- Return:</h5><p><code>formattedCode</code> : An array in the form of</p>
 <pre><code><code class="source-code prettyprint">[code string above selection, code string of selection, code string below selection,
 [new start line of snippet in original file, new end line of snippet in original file]]</code>
-</code></pre><p>For more details and examples see the <a href="https://doc.esdoc.org/github.com/jundl77/auto-format/">documentation</a>.</p>
+</code></pre><p>For more details and examples see the <a href="https://jundl77.github.io/auto-format/">documentation</a>.</p>
 <h2 id="contribute">Contribute</h2><p>Pull requests are always welcome. To add support for a new language, look at the <a href="./src/formatters/javaFormatter.js">JavaFormatter</a>.</p>
-<p>The documentation is <a href="https://doc.esdoc.org/github.com/jundl77/auto-format/">here</a>.</p>
+<p>The documentation is <a href="https://jundl77.github.io/auto-format/">here</a>.</p>
 </div>
 </div>
 

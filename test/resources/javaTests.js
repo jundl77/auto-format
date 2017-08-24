@@ -128,7 +128,51 @@ const testStringWithBraces = {
 }`
 }
 
+const testJavadoc = {
+  "label": "Snippet with Javadoc comments",
+  "offset": 7,
+  "selectionStart": 9,
+  "selectionEnd": 9,
+  "newSnippetStart": 1,
+  "newSnippetEnd": 11,
+  "selection": ["return null;"],
+  "code":`/**
+ * This Javadoc is just a stub.
+ */
+public class SecondExercise {
+    /**
+     * Method that returns the corresponding char-Array for a given input String.
+     */
+    char[] getCharArrayForInput(String input) {
+        return null;
+    }
+}
+ `,
+  "formatResult":`/**
+ * This Javadoc is just a stub.
+ */
+public class SecondExercise {
+    /**
+     * Method that returns the corresponding char-Array for a given input String.
+     */
+    char[] getCharArrayForInput(String input) {
+        return null;
+    }
+}`,
+  "formatSnippetResult":`/**
+ * This Javadoc is just a stub.
+ */
+public class SecondExercise {
+    /**
+     * Method that returns the corresponding char-Array for a given input String.
+     */
+    char[] getCharArrayForInput(String input) {
+        return null;
+    }
+}`
+}
+
 export default {
   "indentationToken": "    ",
-  "tests": [testGeneral, testStringWithBraces]
+  "tests": [testGeneral, testStringWithBraces, testJavadoc]
 }

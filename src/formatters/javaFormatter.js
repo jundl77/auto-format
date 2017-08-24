@@ -69,21 +69,21 @@ export default class JavaFormatter extends Formatter {
    *  START:
    * 1.  @Test
    * 2.  public void test1() {
-     * 3.      System.out.println("Test 1");
-     * 4.  }
+   * 3.      System.out.println("Test 1");
+   * 4.  }
    * 5.
    * 6.  // ------------------
    * 7.  // Perform test 2.
    * 8.  // ------------------
    * 9. @Test
    * 10. public void test2() {
-     * 11.     System.out.println("Test 2");
-     * 12. }
+   * 11.     System.out.println("Test 2");
+   * 12. }
    * 13.
    * 14. @Test
    * 15. public void test3() {
-     * 16.     System.out.println("Test 3");
-     * 17. }
+   * 16.     System.out.println("Test 3");
+   * 17. }
    * 18. ...
    *
    * RESULT:
@@ -92,8 +92,8 @@ export default class JavaFormatter extends Formatter {
    * 8.  // ------------------
    * 9. @Test
    * 10. public void test2() {
-     * 11.     System.out.println("Test 1");
-     * 12. }
+   * 11.     System.out.println("Test 1");
+   * 12. }
    *
    * @param code The original code base in which the selection is.
    * @param startRow The start row of the selection in the code base.
@@ -109,6 +109,7 @@ export default class JavaFormatter extends Formatter {
       ((codeArray, index) => this._expressionIdentifier(codeArray, index)),
       ((lines, index) => this._scopeEnterFunc(lines, index)),
       ((lines, index) => this._scopeExitFunc(lines, index)),
+      (array => this._formatJavadoc(array)),
       (line => this._checkForFunction(line)),
       (line => this._checkForSpecialStatement(line)),
       COMMENT_BODY_TOKEN, COMMENT_SIMPLE_TOKEN)
@@ -121,7 +122,7 @@ export default class JavaFormatter extends Formatter {
    * An expression is defined as:
    * - A line that ends with a termination token (e.g. ';')
    * - A line that defines a scope start (e.g. '\{')
-     * - A line that defines a scope end (e.g. '\}')
+   * - A line that defines a scope end (e.g. '\}')
    * - A line that starts with a special character (e.g. '@')
    * - A line that starts with a comment (e.g. '//')
    * - An empty line (e.g. '')
@@ -146,7 +147,7 @@ export default class JavaFormatter extends Formatter {
   /**
    * Checks if a line identified by an index in an array starts a new scope.
    * Example: 'if (foo) {'
-     *
+   *
    * @param codeArray An array of lines of code.
    * @param index The index of the relevant line in the code array.
    * @returns {Number} The position in the line where the new scope starts or null
@@ -169,6 +170,23 @@ export default class JavaFormatter extends Formatter {
    */
   _scopeExitFunc(codeArray, index) {
     return this._identifyScope(codeArray, index, SCOPE_EXIT_TOKEN)
+  }
+
+  /**
+   * Adds a space before Javadoc comments if they are a body for end comment.
+   *
+   * @param codeArray The already formatted code array.
+   * @returns {*} The formatted code array with spaces for Javadoc.
+   * @private
+   */
+  _formatJavadoc(codeArray) {
+    for (let i = 0; i < codeArray.length; i++) {
+      let lineTemp = codeArray[i].trim()
+      if (lineTemp.startsWith(COMMENT_BODY_TOKEN) || lineTemp.startsWith(COMMENT_END_TOKEN)) {
+        codeArray[i] = " " + codeArray[i];
+      }
+    }
+    return codeArray
   }
 
   /**

@@ -408,6 +408,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/core/formatter.js~aformatter#formatcommentfunc",
+    "class/src/core/formatter.js~AFormatter.html#instance-member-formatCommentFunc",
+    "src/core/formatter.js~AFormatter#formatCommentFunc",
+    "member"
+  ],
+  [
     "src/core/formatter.js~aformatter#formatsnippet",
     "class/src/core/formatter.js~AFormatter.html#instance-method-formatSnippet",
     "src/core/formatter.js~AFormatter#formatSnippet",
@@ -591,6 +597,12 @@ window.esdocSearchIndex = [
     "src/formatters/javaformatter.js~javaformatter#_expressionidentifier",
     "class/src/formatters/javaFormatter.js~JavaFormatter.html#instance-method-_expressionIdentifier",
     "src/formatters/javaFormatter.js~JavaFormatter#_expressionIdentifier",
+    "method"
+  ],
+  [
+    "src/formatters/javaformatter.js~javaformatter#_formatjavadoc",
+    "class/src/formatters/javaFormatter.js~JavaFormatter.html#instance-method-_formatJavadoc",
+    "src/formatters/javaFormatter.js~JavaFormatter#_formatJavadoc",
     "method"
   ],
   [

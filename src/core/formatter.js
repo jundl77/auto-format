@@ -86,17 +86,19 @@ export default class AFormatter {
    * @param expressionIdentifier Function that identifies if a line qualifies as an expression:
    * - A line that ends with a termination token (e.g. ';')
    * - A line that defines a scope start (e.g. '\{')
-     * - A line that defines a scope end (e.g. '\}')
+   * - A line that defines a scope end (e.g. '\}')
    * - A line that starts with a special character (e.g. '@')
    * - A line that starts with a comment (e.g. '//')
    * - An empty line (e.g. '')
    * @param scopeEnterFunc Function that identifies if a new scope is entered in a line.
    * @param scopeExitFunc Function that identifies if a scope is exited in a line.
+   * @param formatCommentsFunc Function that formats comments (e.g. add space before body and
+   *                                 end comment in Javadoc)
    * @returns {Array} An array of formatted lines.
    */
-  format(code, expressionIdentifier, scopeEnterFunc, scopeExitFunc) {
+  format(code, expressionIdentifier, scopeEnterFunc, scopeExitFunc, formatCommentsFunc) {
     return this.formatSnippet(code, null, null, null, expressionIdentifier, scopeEnterFunc,
-      scopeExitFunc, null, null, null, null)
+      scopeExitFunc, formatCommentsFunc, null, null, null, null)
   }
 
   /**
@@ -124,21 +126,21 @@ export default class AFormatter {
    * START:
    * 1.  @Test
    * 2.  public void test1() {
-     * 3.      System.out.println("Test 1");
-     * 4.  }
+   * 3.      System.out.println("Test 1");
+   * 4.  }
    * 5.
    * 6.  // ------------------
    * 7.  // Perform test 2.
    * 8.  // ------------------
    * 9. @Test
    * 10. public void test2() {
-     * 11.     System.out.println("Test 2");
-     * 12. }
+   * 11.     System.out.println("Test 2");
+   * 12. }
    * 13.
    * 14. @Test
    * 15. public void test3() {
-     * 16.     System.out.println("Test 3");
-     * 17. }
+   * 16.     System.out.println("Test 3");
+   * 17. }
    * 18. ...
    *
    * RESULT:
@@ -147,8 +149,8 @@ export default class AFormatter {
    * 8.  // ------------------
    * 9. @Test
    * 10. public void test2() {
-     * 11.     System.out.println("Test 1");
-     * 12. }
+   * 11.     System.out.println("Test 1");
+   * 12. }
    *
    * @param code The original code base in which the selection is.
    * @param startRow The start row of the selection in the code base.
@@ -159,12 +161,14 @@ export default class AFormatter {
    * An expression is defined as:
    * - A line that ends with a termination token (e.g. ';')
    * - A line that defines a scope start (e.g. '\{')
-     * - A line that defines a scope end (e.g. '\}')
+   * - A line that defines a scope end (e.g. '\}')
    * - A line that starts with a special character (e.g. '@')
    * - A line that starts with a comment (e.g. '//')
    * - An empty line (e.g. '')
    * @param scopeEnterFunc Function that identifies if a new scope is entered in a line.
    * @param scopeExitFunc Function that identifies if a scope is exited in a line.
+   * @param formatCommentsFunc Function that formats comments (e.g. add space before body and
+   *                                 end comment in Javadoc)
    * @param identifyMethodSigFunc Function that identifies if a line is a method signature.
    * @param identifySpecialStatement Function that identifies if a line contains a special
    *                                 statement (e.g. comment or '@' in Java)
@@ -175,7 +179,7 @@ export default class AFormatter {
    *              end lines of the snippet in the original code base.
    */
   formatSnippet(code, startRow, endRow, offset, expressionIdentifier, scopeEnterFunc,
-                scopeExitFunc, identifyMethodSigFunc, identifySpecialStatement,
+                scopeExitFunc, formatCommentsFunc, identifyMethodSigFunc, identifySpecialStatement,
                 bodyCommentToken, simpleCommentToken) {
     // Initialize
     this.fullCodeArray = code.split('\n')
@@ -185,6 +189,7 @@ export default class AFormatter {
     this.expressionIdentifier = expressionIdentifier
     this.scopeEnterFunc = scopeEnterFunc
     this.scopeExitFunc = scopeExitFunc
+    this.formatCommentFunc = formatCommentsFunc
     this.identifyMethodSigFunc = identifyMethodSigFunc
     this.identifySpecialStatement = identifySpecialStatement
     this.bodyCommentToken = bodyCommentToken
@@ -234,6 +239,9 @@ export default class AFormatter {
         }
       }
     }
+
+    // Format comments correctly (some languages have special formatting for comments, e.g. Javadoc)
+    formattedArray = this.formatCommentFunc(formattedArray)
 
     // If we don't have a snippet, return the result now
     if (!snippetPresent) {
@@ -337,6 +345,7 @@ export default class AFormatter {
     let originalLength = codeArray.length
     let codeFound = false
     let index = codeArray.length - 1
+
     while (index >= 0) {
       let line = codeArray[index].trim()
       if (this.identifySpecialStatement(line) && line !== ''
@@ -351,6 +360,11 @@ export default class AFormatter {
 
     codeArray = this._trimEnd(codeArray)
     let offset = originalLength - codeArray.length
+
+    // Make sure we don't reduce an empty array
+    if (codeArray.length === 0) {
+      return codeArray
+    }
 
     return [codeArray.reduce(((acc, line) => acc + '\n' + line)), oldEnd - offset]
   }

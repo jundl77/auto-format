@@ -119,6 +119,40 @@ and follow the JavaFormatter as an example.</p>
 </table>
 </div>
 <div data-ice="memberSummary"><h2>Member Summary</h2><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">Public Members</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/core/formatter.js~AFormatter.html#instance-member-formatCommentFunc">formatCommentFunc</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+<table class="summary" data-ice="summary">
   <thead><tr><td data-ice="title" colspan="3">Private Members</td></tr></thead>
   <tbody>
   
@@ -479,7 +513,7 @@ and follow the JavaFormatter as an example.</p>
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/core/formatter.js~AFormatter.html#instance-method-format">format</a></span></span><span class="code" data-ice="signature">(code: <span>*</span>, expressionIdentifier: <span>*</span>, scopeEnterFunc: <span>*</span>, scopeExitFunc: <span>*</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/core/formatter.js~AFormatter.html#instance-method-format">format</a></span></span><span class="code" data-ice="signature">(code: <span>*</span>, expressionIdentifier: <span>*</span>, scopeEnterFunc: <span>*</span>, scopeExitFunc: <span>*</span>, formatCommentsFunc: <span>*</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></span>
         </p>
       </div>
       <div>
@@ -508,7 +542,7 @@ and follow the JavaFormatter as an example.</p>
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/core/formatter.js~AFormatter.html#instance-method-formatSnippet">formatSnippet</a></span></span><span class="code" data-ice="signature">(code: <span>*</span>, startRow: <span>*</span>, endRow: <span>*</span>, offset: <span>*</span>, expressionIdentifier: <span>*</span>, scopeEnterFunc: <span>*</span>, scopeExitFunc: <span>*</span>, identifyMethodSigFunc: <span>*</span>, identifySpecialStatement: <span>*</span>, bodyCommentToken: <span>*</span>, simpleCommentToken: <span>*</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/core/formatter.js~AFormatter.html#instance-method-formatSnippet">formatSnippet</a></span></span><span class="code" data-ice="signature">(code: <span>*</span>, startRow: <span>*</span>, endRow: <span>*</span>, offset: <span>*</span>, expressionIdentifier: <span>*</span>, scopeEnterFunc: <span>*</span>, scopeExitFunc: <span>*</span>, formatCommentsFunc: <span>*</span>, identifyMethodSigFunc: <span>*</span>, identifySpecialStatement: <span>*</span>, bodyCommentToken: <span>*</span>, simpleCommentToken: <span>*</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></span>
         </p>
       </div>
       <div>
@@ -926,7 +960,52 @@ from the original file and append them to the snippet.</p>
   
 </div>
 </div>
-<div data-ice="memberDetails"><h2 data-ice="title">Private Members</h2>
+<div data-ice="memberDetails"><h2 data-ice="title">Public Members</h2>
+
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-member-formatCommentFunc">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">formatCommentFunc</span><span class="code" data-ice="signature">: <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/core/formatter.js.html#lineNumber192">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<h2 data-ice="title">Private Members</h2>
 
 <div class="detail" data-ice="detail">
   <h3 data-ice="anchor" id="instance-member-bodyCommentToken">
@@ -1455,11 +1534,11 @@ from the original file and append them to the snippet.</p>
     
     
     
-    <span class="code" data-ice="name">format</span><span class="code" data-ice="signature">(code: <span>*</span>, expressionIdentifier: <span>*</span>, scopeEnterFunc: <span>*</span>, scopeExitFunc: <span>*</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></span>
+    <span class="code" data-ice="name">format</span><span class="code" data-ice="signature">(code: <span>*</span>, expressionIdentifier: <span>*</span>, scopeEnterFunc: <span>*</span>, scopeExitFunc: <span>*</span>, formatCommentsFunc: <span>*</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/core/formatter.js.html#lineNumber97">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/core/formatter.js.html#lineNumber99">source</a></span></span>
     </span>
   </h3>
 
@@ -1517,6 +1596,14 @@ will be indented accordingly to their scope.</p>
       <td data-ice="description"><p>Function that identifies if a scope is exited in a line.</p>
 </td>
     </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">formatCommentsFunc</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Function that formats comments (e.g. add space before body and
+                                end comment in Javadoc)</p>
+</td>
+    </tr>
 </tbody>
   </table>
 </div>
@@ -1560,11 +1647,11 @@ will be indented accordingly to their scope.</p>
     
     
     
-    <span class="code" data-ice="name">formatSnippet</span><span class="code" data-ice="signature">(code: <span>*</span>, startRow: <span>*</span>, endRow: <span>*</span>, offset: <span>*</span>, expressionIdentifier: <span>*</span>, scopeEnterFunc: <span>*</span>, scopeExitFunc: <span>*</span>, identifyMethodSigFunc: <span>*</span>, identifySpecialStatement: <span>*</span>, bodyCommentToken: <span>*</span>, simpleCommentToken: <span>*</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></span>
+    <span class="code" data-ice="name">formatSnippet</span><span class="code" data-ice="signature">(code: <span>*</span>, startRow: <span>*</span>, endRow: <span>*</span>, offset: <span>*</span>, expressionIdentifier: <span>*</span>, scopeEnterFunc: <span>*</span>, scopeExitFunc: <span>*</span>, formatCommentsFunc: <span>*</span>, identifyMethodSigFunc: <span>*</span>, identifySpecialStatement: <span>*</span>, bodyCommentToken: <span>*</span>, simpleCommentToken: <span>*</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/core/formatter.js.html#lineNumber177">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/core/formatter.js.html#lineNumber181">source</a></span></span>
     </span>
   </h3>
 
@@ -1654,6 +1741,14 @@ An expression is defined as:</p>
       <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>Function that identifies if a scope is exited in a line.</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">formatCommentsFunc</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Function that formats comments (e.g. add space before body and
+                                end comment in Javadoc)</p>
 </td>
     </tr>
 <tr data-ice="property" data-depth="0">
@@ -1771,7 +1866,7 @@ RESULT:
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/core/formatter.js.html#lineNumber389">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/core/formatter.js.html#lineNumber403">source</a></span></span>
     </span>
   </h3>
 
@@ -1846,7 +1941,7 @@ RESULT:
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/core/formatter.js.html#lineNumber294">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/core/formatter.js.html#lineNumber302">source</a></span></span>
     </span>
   </h3>
 
@@ -1941,7 +2036,7 @@ selection. Performs the following tasks:</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/core/formatter.js.html#lineNumber332">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/core/formatter.js.html#lineNumber340">source</a></span></span>
     </span>
   </h3>
 
@@ -2029,7 +2124,7 @@ selection. Performs the following tasks:</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/core/formatter.js.html#lineNumber405">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/core/formatter.js.html#lineNumber419">source</a></span></span>
     </span>
   </h3>
 
@@ -2112,7 +2207,7 @@ from the original file and append them to the snippet.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/core/formatter.js.html#lineNumber366">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/core/formatter.js.html#lineNumber380">source</a></span></span>
     </span>
   </h3>
 
@@ -2181,7 +2276,7 @@ from the original file and append them to the snippet.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/core/formatter.js.html#lineNumber271">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/core/formatter.js.html#lineNumber279">source</a></span></span>
     </span>
   </h3>
 
@@ -2266,7 +2361,7 @@ from the original file and append them to the snippet.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/core/formatter.js.html#lineNumber422">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/core/formatter.js.html#lineNumber436">source</a></span></span>
     </span>
   </h3>
 
@@ -2340,7 +2435,7 @@ from the original file and append them to the snippet.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/core/formatter.js.html#lineNumber463">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/core/formatter.js.html#lineNumber477">source</a></span></span>
     </span>
   </h3>
 
@@ -2414,7 +2509,7 @@ from the original file and append them to the snippet.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/core/formatter.js.html#lineNumber535">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/core/formatter.js.html#lineNumber549">source</a></span></span>
     </span>
   </h3>
 
@@ -2498,7 +2593,7 @@ Suffix: All lines below the selection.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/core/formatter.js.html#lineNumber486">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/core/formatter.js.html#lineNumber500">source</a></span></span>
     </span>
   </h3>
 
@@ -2572,7 +2667,7 @@ Suffix: All lines below the selection.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/core/formatter.js.html#lineNumber508">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/core/formatter.js.html#lineNumber522">source</a></span></span>
     </span>
   </h3>
 
