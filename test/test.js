@@ -10,6 +10,12 @@ describe("Perform black-box tests on all formatters\n", () => {
   })
 })
 
+/**
+ * Thoroughly test the formatter by giving it examples with expected results coded in a json.
+ *
+ * @param formatter The formatter to test.
+ * @param json The json containing the test cases.
+ */
 function blackBoxTest(formatter, json) {
   json.tests.forEach(test => {
     it("Test case: " + test.label, () => {
