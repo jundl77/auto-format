@@ -173,7 +173,7 @@ export default class JavaFormatter extends Formatter {
   }
 
   /**
-   * Adds a space before Javadoc comments if they are a body for end comment.
+   * Adds a space before Javadoc comments if they are a body or end comment.
    *
    * @param codeArray The already formatted code array.
    * @returns {*} The formatted code array with spaces for Javadoc.
