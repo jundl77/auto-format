@@ -1,14 +1,19 @@
+const path = require('path');
+
+const entryPath = path.resolve(__dirname, "./src/index.js");
+const outputPath = path.resolve(__dirname, "./lib");
+
 module.exports = {
-    entry: "./src/index.js",
+    entry: entryPath,
     target: 'node',
     module: {
-        loaders: [
-            {test: /\.json$/, loader: "json-loader"},
-            {test: /\.jsx?$/, exclude: /(node_modules)/, loader: 'babel'}
+        rules: [
+            {test: /\.json$/, use: "json-loader"},
+            {test: /\.jsx?$/, exclude: /(node_modules)/, use: ['babel-loader', 'eslint-loader']}
         ]
     },
     output: {
-        path: "./lib",
+        path: outputPath,
         filename: "lib.min.js",
         libraryTarget: 'umd'
     }

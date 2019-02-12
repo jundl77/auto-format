@@ -183,7 +183,7 @@ export default class JavaFormatter extends Formatter {
     for (let i = 0; i < codeArray.length; i++) {
       let lineTemp = codeArray[i].trim()
       if (lineTemp.startsWith(COMMENT_BODY_TOKEN) || lineTemp.startsWith(COMMENT_END_TOKEN)) {
-        codeArray[i] = " " + codeArray[i];
+        codeArray[i] = " " + codeArray[i]
       }
     }
     return codeArray

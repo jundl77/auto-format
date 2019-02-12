@@ -1,4 +1,4 @@
-import ScopeNode from "./scopeTree";
+import ScopeNode from "./scopeTree"
 
 /**
  * This is the core formatter. It contains most of the logic behind the formatting,
@@ -503,7 +503,7 @@ export default class AFormatter {
     while (canTrim && codeArray.length > 0) {
       let line = codeArray[0]
       if (line === "\n" || line.trim() === "") {
-        codeArray.shift();
+        codeArray.shift()
       } else {
         canTrim = false
       }
@@ -568,6 +568,6 @@ export default class AFormatter {
       }
     })
 
-    return [startArray, selectionArray, endArray];
+    return [startArray, selectionArray, endArray]
   }
 }

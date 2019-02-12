@@ -1,5 +1,4 @@
 {
   "moduleId": "auto-format",
-  "presets": ["es2015", "stage-0"],
-  "plugins": ["add-module-exports"]
+  "presets": ["@babel/preset-env"]
 }

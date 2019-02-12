@@ -180,7 +180,7 @@ export default class ScopeTree {
     let node = this
     if (lines.length === 0) {
       if (node.getParent() !== null) {
-        return node.getParent().build([], index, scopeEnterFunc, scopeExitFunc);
+        return node.getParent().build([], index, scopeEnterFunc, scopeExitFunc)
       } else {
         return node
       }
@@ -194,7 +194,7 @@ export default class ScopeTree {
       let child = new ScopeTree(node, index)
       node.addChild(child)
 
-      let remaining = line.substr(enterIndex + 1);
+      let remaining = line.substr(enterIndex + 1)
       if (scopeEnterFunc([remaining], 0) !== null) {
         lines.unshift(remaining)
         return child.build(lines, index, scopeEnterFunc, scopeExitFunc)
