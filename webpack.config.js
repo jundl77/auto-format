@@ -4,6 +4,7 @@ const entryPath = path.resolve(__dirname, "./src/index.js");
 const outputPath = path.resolve(__dirname, "./lib");
 
 module.exports = {
+    mode: 'production',
     entry: entryPath,
     target: 'node',
     module: {
