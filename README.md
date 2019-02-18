@@ -7,7 +7,7 @@
 
 An easy to use, light-weight library to auto-format code in javascript. Works well with code highlighting libraries to display beautiful, uniformly formatted code. 
 
-As of right now only Java can be formatted properly, although you will probably get decent results with any language that uses brackets as scope delimiters. Further more the library is very extensible, in fact you only have to implement 5 methods to add support for another language.
+As of right now only Java can be formatted properly, although you will probably get decent results with any language that uses brackets as scope delimiters. Furthermore, the library is very extensible, in fact you only have to implement 5 methods to add support for another language.
 Please see [contribute](#contribute) if you would like to contribute. Help is always welcome!
 
 ## Examples
